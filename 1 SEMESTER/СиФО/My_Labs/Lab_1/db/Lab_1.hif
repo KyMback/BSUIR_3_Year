@@ -1,0 +1,88 @@
+Quartus II
+Version 9.1 Build 222 10/21/2009 SJ Web Edition
+7
+3500
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+Multiplexeri
+# storage
+db|Lab_1.(1).cnf
+db|Lab_1.(1).cnf
+# case_insensitive
+# source_file
+multiplexeri.bdf
+2a515991c73778238cfc53c6c176c65
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Lab_1:inst|Multiplexeri:inst15
+Lab_1:inst|Multiplexeri:inst14
+Lab_1:inst|Multiplexeri:inst17
+Lab_1:inst|Multiplexeri:inst16
+Lab_1:inst|Multiplexeri:inst19
+Lab_1:inst|Multiplexeri:inst18
+}
+# macro_sequence
+
+# end
+# entity
+Lab_1
+# storage
+db|Lab_1.(0).cnf
+db|Lab_1.(0).cnf
+# case_insensitive
+# source_file
+lab_1.bdf
+b4e281d85cb059fedcbc911f83e92d3c
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Lab_1:inst
+}
+# macro_sequence
+
+# end
+# entity
+Block3
+# storage
+db|Lab_1.(2).cnf
+db|Lab_1.(2).cnf
+# case_insensitive
+# source_file
+block3.bdf
+5a2947a61da88bc4cf4a47e56acd184
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+

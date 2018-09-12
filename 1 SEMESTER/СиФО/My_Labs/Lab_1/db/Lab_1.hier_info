@@ -1,0 +1,92 @@
+|Block3
+Output0 <= Lab_1:inst.Output0
+Input0 => Lab_1:inst.Input0
+Input1 => Lab_1:inst.Input1
+Input2 => Lab_1:inst.Input2
+Input3 => Lab_1:inst.Input3
+Input4 => Lab_1:inst.Input4
+Input5 => Lab_1:inst.Input5
+C => Lab_1:inst.C
+Shift => Lab_1:inst.Shift
+Output1 <= Lab_1:inst.Output1
+Output2 <= Lab_1:inst.Output2
+Output3 <= Lab_1:inst.Output3
+Output4 <= Lab_1:inst.Output4
+Output5 <= Lab_1:inst.Output5
+
+
+|Block3|Lab_1:inst
+Output0 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+C => inst7.CLK
+C => inst8.CLK
+C => inst9.CLK
+C => inst10.CLK
+C => inst11.CLK
+C => inst12.CLK
+Shift => Multiplexeri:inst15.Manage
+Shift => Multiplexeri:inst14.Manage
+Shift => Multiplexeri:inst17.Manage
+Shift => Multiplexeri:inst16.Manage
+Shift => Multiplexeri:inst19.Manage
+Shift => Multiplexeri:inst18.Manage
+Input0 => Multiplexeri:inst15.Input0
+Output1 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+Input1 => Multiplexeri:inst14.Input0
+Output2 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+Input2 => Multiplexeri:inst17.Input0
+Output3 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+Input3 => Multiplexeri:inst16.Input0
+Output4 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+Input4 => Multiplexeri:inst19.Input0
+Output5 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+Input5 => Multiplexeri:inst18.Input0
+
+
+|Block3|Lab_1:inst|Multiplexeri:inst15
+Output <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Manage => inst.IN0
+Manage => inst10.IN1
+Input0 => inst11.IN1
+Input1 => inst10.IN0
+
+
+|Block3|Lab_1:inst|Multiplexeri:inst14
+Output <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Manage => inst.IN0
+Manage => inst10.IN1
+Input0 => inst11.IN1
+Input1 => inst10.IN0
+
+
+|Block3|Lab_1:inst|Multiplexeri:inst17
+Output <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Manage => inst.IN0
+Manage => inst10.IN1
+Input0 => inst11.IN1
+Input1 => inst10.IN0
+
+
+|Block3|Lab_1:inst|Multiplexeri:inst16
+Output <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Manage => inst.IN0
+Manage => inst10.IN1
+Input0 => inst11.IN1
+Input1 => inst10.IN0
+
+
+|Block3|Lab_1:inst|Multiplexeri:inst19
+Output <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Manage => inst.IN0
+Manage => inst10.IN1
+Input0 => inst11.IN1
+Input1 => inst10.IN0
+
+
+|Block3|Lab_1:inst|Multiplexeri:inst18
+Output <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Manage => inst.IN0
+Manage => inst10.IN1
+Input0 => inst11.IN1
+Input1 => inst10.IN0
+
+
