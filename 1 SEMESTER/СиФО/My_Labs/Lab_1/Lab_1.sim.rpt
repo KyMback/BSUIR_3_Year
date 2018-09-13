@@ -1,5 +1,5 @@
 Simulator report for Lab_1
-Thu Sep 13 00:10:14 2018
+Thu Sep 13 13:49:20 2018
 Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
 
 
@@ -46,8 +46,8 @@ applicable agreement for further details.
 ; Simulation Start Time       ; 0 ps         ;
 ; Simulation End Time         ; 1.0 us       ;
 ; Simulation Netlist Size     ; 36 nodes     ;
-; Simulation Coverage         ;      52.78 % ;
-; Total Number of Transitions ; 152          ;
+; Simulation Coverage         ;      63.89 % ;
+; Total Number of Transitions ; 210          ;
 ; Simulation Breakpoints      ; 0            ;
 ; Family                      ; Stratix II   ;
 +-----------------------------+--------------+
@@ -94,13 +94,13 @@ Please use Quartus II to view the waveform report data.
 +-----------------------------------------------------+--------------+
 ; Type                                                ; Value        ;
 +-----------------------------------------------------+--------------+
-; Total coverage as a percentage                      ;      52.78 % ;
+; Total coverage as a percentage                      ;      63.89 % ;
 ; Total nodes checked                                 ; 36           ;
 ; Total output ports checked                          ; 36           ;
-; Total output ports with complete 1/0-value coverage ; 19           ;
+; Total output ports with complete 1/0-value coverage ; 23           ;
 ; Total output ports with no 1/0-value coverage       ; 13           ;
-; Total output ports with no 1-value coverage         ; 16           ;
-; Total output ports with no 0-value coverage         ; 14           ;
+; Total output ports with no 1-value coverage         ; 13           ;
+; Total output ports with no 0-value coverage         ; 13           ;
 +-----------------------------------------------------+--------------+
 
 
@@ -111,6 +111,7 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; Node Name                                     ; Output Port Name                              ; Output Port Type ;
 +-----------------------------------------------+-----------------------------------------------+------------------+
 ; |Block3|C                                     ; |Block3|C                                     ; out              ;
+; |Block3|Shift                                 ; |Block3|Shift                                 ; out              ;
 ; |Block3|Output1                               ; |Block3|Output1                               ; pin_out          ;
 ; |Block3|Output2                               ; |Block3|Output2                               ; pin_out          ;
 ; |Block3|Output3                               ; |Block3|Output3                               ; pin_out          ;
@@ -124,11 +125,14 @@ The following table displays output ports that toggle between 1 and 0 during sim
 ; |Block3|Lab_1:inst|Multiplexeri:inst18|inst1  ; |Block3|Lab_1:inst|Multiplexeri:inst18|inst1  ; out0             ;
 ; |Block3|Lab_1:inst|Multiplexeri:inst18|inst10 ; |Block3|Lab_1:inst|Multiplexeri:inst18|inst10 ; out0             ;
 ; |Block3|Lab_1:inst|Multiplexeri:inst19|inst1  ; |Block3|Lab_1:inst|Multiplexeri:inst19|inst1  ; out0             ;
+; |Block3|Lab_1:inst|Multiplexeri:inst19|inst11 ; |Block3|Lab_1:inst|Multiplexeri:inst19|inst11 ; out0             ;
 ; |Block3|Lab_1:inst|Multiplexeri:inst19|inst10 ; |Block3|Lab_1:inst|Multiplexeri:inst19|inst10 ; out0             ;
 ; |Block3|Lab_1:inst|Multiplexeri:inst16|inst1  ; |Block3|Lab_1:inst|Multiplexeri:inst16|inst1  ; out0             ;
 ; |Block3|Lab_1:inst|Multiplexeri:inst16|inst10 ; |Block3|Lab_1:inst|Multiplexeri:inst16|inst10 ; out0             ;
 ; |Block3|Lab_1:inst|Multiplexeri:inst17|inst1  ; |Block3|Lab_1:inst|Multiplexeri:inst17|inst1  ; out0             ;
 ; |Block3|Lab_1:inst|Multiplexeri:inst17|inst10 ; |Block3|Lab_1:inst|Multiplexeri:inst17|inst10 ; out0             ;
+; |Block3|Lab_1:inst|Multiplexeri:inst14|inst1  ; |Block3|Lab_1:inst|Multiplexeri:inst14|inst1  ; out0             ;
+; |Block3|Lab_1:inst|Multiplexeri:inst14|inst11 ; |Block3|Lab_1:inst|Multiplexeri:inst14|inst11 ; out0             ;
 +-----------------------------------------------+-----------------------------------------------+------------------+
 
 
@@ -147,11 +151,8 @@ The following table displays output ports that do not toggle to 1 during simulat
 ; |Block3|Input5                                ; |Block3|Input5                                ; out              ;
 ; |Block3|Lab_1:inst|inst7                      ; |Block3|Lab_1:inst|inst7                      ; regout           ;
 ; |Block3|Lab_1:inst|Multiplexeri:inst18|inst11 ; |Block3|Lab_1:inst|Multiplexeri:inst18|inst11 ; out0             ;
-; |Block3|Lab_1:inst|Multiplexeri:inst19|inst11 ; |Block3|Lab_1:inst|Multiplexeri:inst19|inst11 ; out0             ;
 ; |Block3|Lab_1:inst|Multiplexeri:inst16|inst11 ; |Block3|Lab_1:inst|Multiplexeri:inst16|inst11 ; out0             ;
 ; |Block3|Lab_1:inst|Multiplexeri:inst17|inst11 ; |Block3|Lab_1:inst|Multiplexeri:inst17|inst11 ; out0             ;
-; |Block3|Lab_1:inst|Multiplexeri:inst14|inst1  ; |Block3|Lab_1:inst|Multiplexeri:inst14|inst1  ; out0             ;
-; |Block3|Lab_1:inst|Multiplexeri:inst14|inst11 ; |Block3|Lab_1:inst|Multiplexeri:inst14|inst11 ; out0             ;
 ; |Block3|Lab_1:inst|Multiplexeri:inst14|inst10 ; |Block3|Lab_1:inst|Multiplexeri:inst14|inst10 ; out0             ;
 ; |Block3|Lab_1:inst|Multiplexeri:inst15|inst11 ; |Block3|Lab_1:inst|Multiplexeri:inst15|inst11 ; out0             ;
 +-----------------------------------------------+-----------------------------------------------+------------------+
@@ -170,7 +171,6 @@ The following table displays output ports that do not toggle to 0 during simulat
 ; |Block3|Input3                                ; |Block3|Input3                                ; out              ;
 ; |Block3|Input4                                ; |Block3|Input4                                ; out              ;
 ; |Block3|Input5                                ; |Block3|Input5                                ; out              ;
-; |Block3|Shift                                 ; |Block3|Shift                                 ; out              ;
 ; |Block3|Lab_1:inst|inst7                      ; |Block3|Lab_1:inst|inst7                      ; regout           ;
 ; |Block3|Lab_1:inst|Multiplexeri:inst18|inst11 ; |Block3|Lab_1:inst|Multiplexeri:inst18|inst11 ; out0             ;
 ; |Block3|Lab_1:inst|Multiplexeri:inst16|inst11 ; |Block3|Lab_1:inst|Multiplexeri:inst16|inst11 ; out0             ;
@@ -193,18 +193,18 @@ The following table displays output ports that do not toggle to 0 during simulat
 Info: *******************************************************************
 Info: Running Quartus II Simulator
     Info: Version 9.1 Build 222 10/21/2009 SJ Web Edition
-    Info: Processing started: Thu Sep 13 00:10:14 2018
+    Info: Processing started: Thu Sep 13 13:49:20 2018
 Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off Lab_1 -c Lab_1
 Info: Using vector source file "D:/BSUIR/3 Year/1 SEMESTER/—Ë‘Œ/My_Labs/Lab_1/MainWaveform.vwf"
 Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
     Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
 Info: Simulation partitioned into 1 sub-simulations
-Info: Simulation coverage is      52.78 %
-Info: Number of transitions in simulation is 152
+Info: Simulation coverage is      63.89 %
+Info: Number of transitions in simulation is 210
 Info: Quartus II Simulator was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 173 megabytes
-    Info: Processing ended: Thu Sep 13 00:10:14 2018
+    Info: Processing ended: Thu Sep 13 13:49:20 2018
     Info: Elapsed time: 00:00:00
-    Info: Total CPU time (on all processors): 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
 
 
