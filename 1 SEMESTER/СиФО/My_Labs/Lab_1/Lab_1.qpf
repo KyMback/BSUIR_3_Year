@@ -18,12 +18,20 @@
 #
 # Quartus II
 # Version 9.1 Build 222 10/21/2009 SJ Web Edition
+<<<<<<< HEAD
 # Date created = 00:13:08  September 13, 2018
+=======
+# Date created = 22:09:41  September 12, 2018
+>>>>>>> SIFO/Lab_1
 #
 # -------------------------------------------------------------------------- #
 
 QUARTUS_VERSION = "9.1"
+<<<<<<< HEAD
 DATE = "00:13:08  September 13, 2018"
+=======
+DATE = "22:09:41  September 12, 2018"
+>>>>>>> SIFO/Lab_1
 
 # Revisions
 
