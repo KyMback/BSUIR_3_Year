@@ -1,0 +1,46 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 8.613 ns
+From           : lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[2]
+To             : DCa[11]
+From Clock     : clk_D
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 11.888 ns
+From           : clk_D
+To             : DCa[11]
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Clock Setup: 'clk_D'
+Slack          : N/A
+Required Time  : None
+Actual Time    : Restricted to 500.00 MHz ( period = 2.000 ns )
+From           : lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[0]
+To             : lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[4]
+From Clock     : clk_D
+To Clock       : clk_D
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+

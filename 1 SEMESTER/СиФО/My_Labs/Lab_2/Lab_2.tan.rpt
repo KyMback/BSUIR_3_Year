@@ -1,0 +1,303 @@
+Classic Timing Analyzer report for Lab_2
+Sun Sep 23 20:26:37 2018
+Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Timing Analyzer Settings
+  4. Clock Settings Summary
+  5. Parallel Compilation
+  6. Clock Setup: 'clk_D'
+  7. tco
+  8. tpd
+  9. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                                                                                                                                                                                                                                                                      ;
++------------------------------+-------+---------------+------------------------------------------------+---------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+------------+----------+--------------+
+; Type                         ; Slack ; Required Time ; Actual Time                                    ; From                                                                                  ; To                                                                                    ; From Clock ; To Clock ; Failed Paths ;
++------------------------------+-------+---------------+------------------------------------------------+---------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+------------+----------+--------------+
+; Worst-case tco               ; N/A   ; None          ; 8.613 ns                                       ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[2] ; DCa[11]                                                                               ; clk_D      ; --       ; 0            ;
+; Worst-case tpd               ; N/A   ; None          ; 11.888 ns                                      ; clk_D                                                                                 ; DCa[11]                                                                               ; --         ; --       ; 0            ;
+; Clock Setup: 'clk_D'         ; N/A   ; None          ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[0] ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[4] ; clk_D      ; clk_D    ; 0            ;
+; Total number of failed paths ;       ;               ;                                                ;                                                                                       ;                                                                                       ;            ;          ; 0            ;
++------------------------------+-------+---------------+------------------------------------------------+---------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+------------+----------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Settings                                                                                                                            ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+; Option                                                                                               ; Setting            ; From ; To ; Entity Name ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+; Device Name                                                                                          ; EP2S15F484C4       ;      ;    ;             ;
+; Timing Models                                                                                        ; Final              ;      ;    ;             ;
+; Default hold multicycle                                                                              ; Same as Multicycle ;      ;    ;             ;
+; Cut paths between unrelated clock domains                                                            ; On                 ;      ;    ;             ;
+; Cut off read during write signal paths                                                               ; On                 ;      ;    ;             ;
+; Cut off feedback from I/O pins                                                                       ; On                 ;      ;    ;             ;
+; Report Combined Fast/Slow Timing                                                                     ; Off                ;      ;    ;             ;
+; Ignore Clock Settings                                                                                ; Off                ;      ;    ;             ;
+; Analyze latches as synchronous elements                                                              ; On                 ;      ;    ;             ;
+; Enable Recovery/Removal analysis                                                                     ; Off                ;      ;    ;             ;
+; Enable Clock Latency                                                                                 ; Off                ;      ;    ;             ;
+; Use TimeQuest Timing Analyzer                                                                        ; Off                ;      ;    ;             ;
+; Minimum Core Junction Temperature                                                                    ; 0                  ;      ;    ;             ;
+; Maximum Core Junction Temperature                                                                    ; 85                 ;      ;    ;             ;
+; Number of source nodes to report per destination node                                                ; 10                 ;      ;    ;             ;
+; Number of destination nodes to report                                                                ; 10                 ;      ;    ;             ;
+; Number of paths to report                                                                            ; 200                ;      ;    ;             ;
+; Report Minimum Timing Checks                                                                         ; Off                ;      ;    ;             ;
+; Use Fast Timing Models                                                                               ; Off                ;      ;    ;             ;
+; Report IO Paths Separately                                                                           ; Off                ;      ;    ;             ;
+; Perform Multicorner Analysis                                                                         ; On                 ;      ;    ;             ;
+; Reports the worst-case path for each clock domain and analysis                                       ; Off                ;      ;    ;             ;
+; Reports worst-case timing paths for each clock domain and analysis                                   ; Off                ;      ;    ;             ;
+; Specifies the maximum number of worst-case timing paths to report for each clock domain and analysis ; 100                ;      ;    ;             ;
+; Removes common clock path pessimism (CCPP) during slack computation                                  ; Off                ;      ;    ;             ;
+; Output I/O Timing Endpoint                                                                           ; Near End           ;      ;    ;             ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Settings Summary                                                                                                                                                             ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; Clock Node Name ; Clock Setting Name ; Type     ; Fmax Requirement ; Early Latency ; Late Latency ; Based on ; Multiply Base Fmax by ; Divide Base Fmax by ; Offset ; Phase offset ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; clk_D           ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Setup: 'clk_D'                                                                                                                                                                                                                                                                                                                               ;
++-------+------------------------------------------------+---------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+; Slack ; Actual fmax (period)                           ; From                                                                                  ; To                                                                                    ; From Clock ; To Clock ; Required Setup Relationship ; Required Longest P2P Time ; Actual Longest P2P Time ;
++-------+------------------------------------------------+---------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[0] ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[4] ; clk_D      ; clk_D    ; None                        ; None                      ; 0.906 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[0] ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[3] ; clk_D      ; clk_D    ; None                        ; None                      ; 0.865 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[1] ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[4] ; clk_D      ; clk_D    ; None                        ; None                      ; 0.865 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[1] ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[3] ; clk_D      ; clk_D    ; None                        ; None                      ; 0.824 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[0] ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[2] ; clk_D      ; clk_D    ; None                        ; None                      ; 0.824 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[2] ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[4] ; clk_D      ; clk_D    ; None                        ; None                      ; 0.824 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[2] ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[3] ; clk_D      ; clk_D    ; None                        ; None                      ; 0.783 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[1] ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[2] ; clk_D      ; clk_D    ; None                        ; None                      ; 0.783 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[0] ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[1] ; clk_D      ; clk_D    ; None                        ; None                      ; 0.783 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[3] ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[4] ; clk_D      ; clk_D    ; None                        ; None                      ; 0.783 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[3] ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[3] ; clk_D      ; clk_D    ; None                        ; None                      ; 0.700 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[2] ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[2] ; clk_D      ; clk_D    ; None                        ; None                      ; 0.700 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[1] ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[1] ; clk_D      ; clk_D    ; None                        ; None                      ; 0.700 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[0] ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[0] ; clk_D      ; clk_D    ; None                        ; None                      ; 0.700 ns                ;
+; N/A   ; Restricted to 500.00 MHz ( period = 2.000 ns ) ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[4] ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[4] ; clk_D      ; clk_D    ; None                        ; None                      ; 0.700 ns                ;
++-------+------------------------------------------------+---------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; tco                                                                                                                                              ;
++-------+--------------+------------+---------------------------------------------------------------------------------------+---------+------------+
+; Slack ; Required tco ; Actual tco ; From                                                                                  ; To      ; From Clock ;
++-------+--------------+------------+---------------------------------------------------------------------------------------+---------+------------+
+; N/A   ; None         ; 8.613 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[2] ; DCa[11] ; clk_D      ;
+; N/A   ; None         ; 8.502 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[0] ; DCa[11] ; clk_D      ;
+; N/A   ; None         ; 8.496 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[1] ; DCa[11] ; clk_D      ;
+; N/A   ; None         ; 8.435 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[2] ; DCa[5]  ; clk_D      ;
+; N/A   ; None         ; 8.336 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[3] ; DCa[11] ; clk_D      ;
+; N/A   ; None         ; 8.322 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[0] ; DCa[5]  ; clk_D      ;
+; N/A   ; None         ; 8.317 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[1] ; DCa[5]  ; clk_D      ;
+; N/A   ; None         ; 8.281 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[4] ; DCa[11] ; clk_D      ;
+; N/A   ; None         ; 8.236 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[2] ; DCa[8]  ; clk_D      ;
+; N/A   ; None         ; 8.176 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[4] ; DCa[5]  ; clk_D      ;
+; N/A   ; None         ; 8.128 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[3] ; DCa[5]  ; clk_D      ;
+; N/A   ; None         ; 8.025 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[1] ; DCa[8]  ; clk_D      ;
+; N/A   ; None         ; 8.004 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[0] ; DCa[8]  ; clk_D      ;
+; N/A   ; None         ; 7.979 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[2] ; DCa[4]  ; clk_D      ;
+; N/A   ; None         ; 7.878 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[4] ; DCa[1]  ; clk_D      ;
+; N/A   ; None         ; 7.843 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[3] ; DCa[8]  ; clk_D      ;
+; N/A   ; None         ; 7.789 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[4] ; DCa[6]  ; clk_D      ;
+; N/A   ; None         ; 7.768 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[1] ; DCa[4]  ; clk_D      ;
+; N/A   ; None         ; 7.754 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[4] ; DCa[2]  ; clk_D      ;
+; N/A   ; None         ; 7.747 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[0] ; DCa[4]  ; clk_D      ;
+; N/A   ; None         ; 7.725 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[4] ; DCa[8]  ; clk_D      ;
+; N/A   ; None         ; 7.705 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[3] ; DCa[1]  ; clk_D      ;
+; N/A   ; None         ; 7.697 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[0] ; DCa[1]  ; clk_D      ;
+; N/A   ; None         ; 7.681 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[2] ; DCa[6]  ; clk_D      ;
+; N/A   ; None         ; 7.677 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[2] ; DCa[2]  ; clk_D      ;
+; N/A   ; None         ; 7.640 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[3] ; DCa[13] ; clk_D      ;
+; N/A   ; None         ; 7.615 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[4] ; DCa[4]  ; clk_D      ;
+; N/A   ; None         ; 7.608 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[0] ; DCa[6]  ; clk_D      ;
+; N/A   ; None         ; 7.595 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[4] ; DCa[13] ; clk_D      ;
+; N/A   ; None         ; 7.581 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[3] ; DCa[2]  ; clk_D      ;
+; N/A   ; None         ; 7.573 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[0] ; DCa[2]  ; clk_D      ;
+; N/A   ; None         ; 7.546 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[1] ; DCa[1]  ; clk_D      ;
+; N/A   ; None         ; 7.475 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[2] ; DCa[1]  ; clk_D      ;
+; N/A   ; None         ; 7.473 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[3] ; DCa[4]  ; clk_D      ;
+; N/A   ; None         ; 7.456 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[1] ; DCa[6]  ; clk_D      ;
+; N/A   ; None         ; 7.423 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[0] ; DCa[13] ; clk_D      ;
+; N/A   ; None         ; 7.418 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[4] ; DCa[3]  ; clk_D      ;
+; N/A   ; None         ; 7.387 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[3] ; DCa[14] ; clk_D      ;
+; N/A   ; None         ; 7.342 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[4] ; DCa[14] ; clk_D      ;
+; N/A   ; None         ; 7.331 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[3] ; DCa[6]  ; clk_D      ;
+; N/A   ; None         ; 7.310 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[2] ; DCa[3]  ; clk_D      ;
+; N/A   ; None         ; 7.298 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[1] ; DCa[12] ; clk_D      ;
+; N/A   ; None         ; 7.296 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[1] ; DCa[2]  ; clk_D      ;
+; N/A   ; None         ; 7.243 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[1] ; DCa[13] ; clk_D      ;
+; N/A   ; None         ; 7.237 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[0] ; DCa[3]  ; clk_D      ;
+; N/A   ; None         ; 7.197 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[4] ; DCa[15] ; clk_D      ;
+; N/A   ; None         ; 7.170 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[0] ; DCa[14] ; clk_D      ;
+; N/A   ; None         ; 7.137 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[2] ; DCa[15] ; clk_D      ;
+; N/A   ; None         ; 7.132 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[2] ; DCa[13] ; clk_D      ;
+; N/A   ; None         ; 7.074 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[2] ; DCa[14] ; clk_D      ;
+; N/A   ; None         ; 7.071 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[3] ; DCa[3]  ; clk_D      ;
+; N/A   ; None         ; 7.046 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[4] ; DCa[12] ; clk_D      ;
+; N/A   ; None         ; 7.040 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[1] ; DCa[14] ; clk_D      ;
+; N/A   ; None         ; 7.026 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[0] ; DCa[15] ; clk_D      ;
+; N/A   ; None         ; 7.020 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[1] ; DCa[15] ; clk_D      ;
+; N/A   ; None         ; 7.019 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[0] ; DCa[12] ; clk_D      ;
+; N/A   ; None         ; 6.988 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[4] ; DCa[0]  ; clk_D      ;
+; N/A   ; None         ; 6.959 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[1] ; DCa[3]  ; clk_D      ;
+; N/A   ; None         ; 6.954 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[2] ; DCa[9]  ; clk_D      ;
+; N/A   ; None         ; 6.938 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[1] ; DCa[10] ; clk_D      ;
+; N/A   ; None         ; 6.881 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[2] ; DCa[0]  ; clk_D      ;
+; N/A   ; None         ; 6.852 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[3] ; DCa[12] ; clk_D      ;
+; N/A   ; None         ; 6.841 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[0] ; DCa[9]  ; clk_D      ;
+; N/A   ; None         ; 6.836 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[1] ; DCa[9]  ; clk_D      ;
+; N/A   ; None         ; 6.833 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[3] ; DCa[15] ; clk_D      ;
+; N/A   ; None         ; 6.808 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[0] ; DCa[0]  ; clk_D      ;
+; N/A   ; None         ; 6.728 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[2] ; DCa[12] ; clk_D      ;
+; N/A   ; None         ; 6.686 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[4] ; DCa[10] ; clk_D      ;
+; N/A   ; None         ; 6.675 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[3] ; DCa[9]  ; clk_D      ;
+; N/A   ; None         ; 6.659 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[0] ; DCa[10] ; clk_D      ;
+; N/A   ; None         ; 6.656 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[1] ; DCa[0]  ; clk_D      ;
+; N/A   ; None         ; 6.625 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[4] ; DCa[9]  ; clk_D      ;
+; N/A   ; None         ; 6.563 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[2] ; DCa[10] ; clk_D      ;
+; N/A   ; None         ; 6.536 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[2] ; DCa[7]  ; clk_D      ;
+; N/A   ; None         ; 6.532 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[3] ; DCa[0]  ; clk_D      ;
+; N/A   ; None         ; 6.466 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[3] ; DCa[10] ; clk_D      ;
+; N/A   ; None         ; 6.425 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[0] ; DCa[7]  ; clk_D      ;
+; N/A   ; None         ; 6.419 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[1] ; DCa[7]  ; clk_D      ;
+; N/A   ; None         ; 6.279 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[4] ; DCa[7]  ; clk_D      ;
+; N/A   ; None         ; 6.234 ns   ; lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[3] ; DCa[7]  ; clk_D      ;
++-------+--------------+------------+---------------------------------------------------------------------------------------+---------+------------+
+
+
++---------------------------------------------------------------+
+; tpd                                                           ;
++-------+-------------------+-----------------+-------+---------+
+; Slack ; Required P2P Time ; Actual P2P Time ; From  ; To      ;
++-------+-------------------+-----------------+-------+---------+
+; N/A   ; None              ; 11.888 ns       ; clk_D ; DCa[11] ;
+; N/A   ; None              ; 11.709 ns       ; clk_D ; DCa[5]  ;
+; N/A   ; None              ; 11.013 ns       ; clk_D ; DCa[8]  ;
+; N/A   ; None              ; 10.756 ns       ; clk_D ; DCa[4]  ;
+; N/A   ; None              ; 10.693 ns       ; clk_D ; DCa[1]  ;
+; N/A   ; None              ; 10.661 ns       ; clk_D ; DCa[13] ;
+; N/A   ; None              ; 10.603 ns       ; clk_D ; DCa[6]  ;
+; N/A   ; None              ; 10.569 ns       ; clk_D ; DCa[2]  ;
+; N/A   ; None              ; 10.408 ns       ; clk_D ; DCa[14] ;
+; N/A   ; None              ; 10.405 ns       ; clk_D ; DCa[12] ;
+; N/A   ; None              ; 10.232 ns       ; clk_D ; DCa[3]  ;
+; N/A   ; None              ; 10.228 ns       ; clk_D ; DCa[9]  ;
+; N/A   ; None              ; 10.085 ns       ; clk_D ; DCa[15] ;
+; N/A   ; None              ; 10.045 ns       ; clk_D ; DCa[10] ;
+; N/A   ; None              ; 9.811 ns        ; clk_D ; DCa[7]  ;
+; N/A   ; None              ; 9.804 ns        ; clk_D ; DCa[0]  ;
++-------+-------------------+-----------------+-------+---------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Classic Timing Analyzer
+    Info: Version 9.1 Build 222 10/21/2009 SJ Web Edition
+    Info: Processing started: Sun Sep 23 20:26:37 2018
+Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off Lab_2 -c Lab_2 --timing_analysis_only
+Warning: Found pins functioning as undefined clocks and/or memory enables
+    Info: Assuming node "clk_D" is an undefined clock
+Info: Clock "clk_D" Internal fmax is restricted to 500.0 MHz between source register "lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[0]" and destination register "lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[4]"
+    Info: fmax restricted to clock pin edge rate 2.0 ns. Expand message to see actual delay path.
+        Info: + Longest register to register delay is 0.906 ns
+            Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LCFF_X33_Y2_N1; Fanout = 18; REG Node = 'lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[0]'
+            Info: 2: + IC(0.000 ns) + CELL(0.527 ns) = 0.527 ns; Loc. = LCCOMB_X33_Y2_N0; Fanout = 2; COMB Node = 'lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|counter_comb_bita0~COUT'
+            Info: 3: + IC(0.000 ns) + CELL(0.041 ns) = 0.568 ns; Loc. = LCCOMB_X33_Y2_N2; Fanout = 2; COMB Node = 'lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|counter_comb_bita1~COUT'
+            Info: 4: + IC(0.000 ns) + CELL(0.041 ns) = 0.609 ns; Loc. = LCCOMB_X33_Y2_N4; Fanout = 2; COMB Node = 'lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|counter_comb_bita2~COUT'
+            Info: 5: + IC(0.000 ns) + CELL(0.041 ns) = 0.650 ns; Loc. = LCCOMB_X33_Y2_N6; Fanout = 1; COMB Node = 'lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|counter_comb_bita3~COUT'
+            Info: 6: + IC(0.000 ns) + CELL(0.144 ns) = 0.794 ns; Loc. = LCCOMB_X33_Y2_N8; Fanout = 1; COMB Node = 'lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|counter_comb_bita4'
+            Info: 7: + IC(0.000 ns) + CELL(0.112 ns) = 0.906 ns; Loc. = LCFF_X33_Y2_N9; Fanout = 17; REG Node = 'lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[4]'
+            Info: Total cell delay = 0.906 ns ( 100.00 % )
+        Info: - Smallest clock skew is 0.000 ns
+            Info: + Shortest clock path from clock "clk_D" to destination register is 2.862 ns
+                Info: 1: + IC(0.000 ns) + CELL(0.974 ns) = 0.974 ns; Loc. = PIN_N20; Fanout = 17; CLK Node = 'clk_D'
+                Info: 2: + IC(0.394 ns) + CELL(0.000 ns) = 1.368 ns; Loc. = CLKCTRL_G3; Fanout = 5; COMB Node = 'clk_D~clkctrl'
+                Info: 3: + IC(0.784 ns) + CELL(0.710 ns) = 2.862 ns; Loc. = LCFF_X33_Y2_N9; Fanout = 17; REG Node = 'lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[4]'
+                Info: Total cell delay = 1.684 ns ( 58.84 % )
+                Info: Total interconnect delay = 1.178 ns ( 41.16 % )
+            Info: - Longest clock path from clock "clk_D" to source register is 2.862 ns
+                Info: 1: + IC(0.000 ns) + CELL(0.974 ns) = 0.974 ns; Loc. = PIN_N20; Fanout = 17; CLK Node = 'clk_D'
+                Info: 2: + IC(0.394 ns) + CELL(0.000 ns) = 1.368 ns; Loc. = CLKCTRL_G3; Fanout = 5; COMB Node = 'clk_D~clkctrl'
+                Info: 3: + IC(0.784 ns) + CELL(0.710 ns) = 2.862 ns; Loc. = LCFF_X33_Y2_N1; Fanout = 18; REG Node = 'lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[0]'
+                Info: Total cell delay = 1.684 ns ( 58.84 % )
+                Info: Total interconnect delay = 1.178 ns ( 41.16 % )
+        Info: + Micro clock to output delay of source is 0.109 ns
+        Info: + Micro setup delay of destination is 0.104 ns
+Info: tco from clock "clk_D" to destination pin "DCa[11]" through register "lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[2]" is 8.613 ns
+    Info: + Longest clock path from clock "clk_D" to source register is 2.862 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.974 ns) = 0.974 ns; Loc. = PIN_N20; Fanout = 17; CLK Node = 'clk_D'
+        Info: 2: + IC(0.394 ns) + CELL(0.000 ns) = 1.368 ns; Loc. = CLKCTRL_G3; Fanout = 5; COMB Node = 'clk_D~clkctrl'
+        Info: 3: + IC(0.784 ns) + CELL(0.710 ns) = 2.862 ns; Loc. = LCFF_X33_Y2_N5; Fanout = 18; REG Node = 'lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[2]'
+        Info: Total cell delay = 1.684 ns ( 58.84 % )
+        Info: Total interconnect delay = 1.178 ns ( 41.16 % )
+    Info: + Micro clock to output delay of source is 0.109 ns
+    Info: + Longest register to pin delay is 5.642 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LCFF_X33_Y2_N5; Fanout = 18; REG Node = 'lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_rlh:auto_generated|safe_q[2]'
+        Info: 2: + IC(0.349 ns) + CELL(0.410 ns) = 0.759 ns; Loc. = LCCOMB_X33_Y2_N26; Fanout = 1; COMB Node = 'inst14~0'
+        Info: 3: + IC(2.646 ns) + CELL(2.237 ns) = 5.642 ns; Loc. = PIN_D8; Fanout = 0; PIN Node = 'DCa[11]'
+        Info: Total cell delay = 2.647 ns ( 46.92 % )
+        Info: Total interconnect delay = 2.995 ns ( 53.08 % )
+Info: Longest tpd from source pin "clk_D" to destination pin "DCa[11]" is 11.888 ns
+    Info: 1: + IC(0.000 ns) + CELL(0.974 ns) = 0.974 ns; Loc. = PIN_N20; Fanout = 17; CLK Node = 'clk_D'
+    Info: 2: + IC(5.596 ns) + CELL(0.435 ns) = 7.005 ns; Loc. = LCCOMB_X33_Y2_N26; Fanout = 1; COMB Node = 'inst14~0'
+    Info: 3: + IC(2.646 ns) + CELL(2.237 ns) = 11.888 ns; Loc. = PIN_D8; Fanout = 0; PIN Node = 'DCa[11]'
+    Info: Total cell delay = 3.646 ns ( 30.67 % )
+    Info: Total interconnect delay = 8.242 ns ( 69.33 % )
+Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 213 megabytes
+    Info: Processing ended: Sun Sep 23 20:26:37 2018
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+
