@@ -31,7 +31,7 @@ namespace Lab_1.Services.Connectors
             try
             {
                 Port.PortName = configuration.ConnectionName;
-                Port.BaudRate = 256000;
+                Port.BaudRate = 9600;
                 Port.DataBits = 8;
                 Port.Parity = Parity.None;
                 Port.StopBits = StopBits.One;

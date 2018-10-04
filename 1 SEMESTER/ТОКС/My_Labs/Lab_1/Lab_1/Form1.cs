@@ -32,24 +32,10 @@ namespace Lab_1
                 XOnXOffButton.Enabled = !Connection.GetDebugInfo().IsAnotherPortBusy;
                 return;
             }
+
             NumberOfInputBytes.Text = message.Length.ToString();
             OutputTextBox.AppendText(message);
             OutputTextBox.AppendText(Environment.NewLine);
-        }
-
-        private void ComPorts_DropDownChanged(object sender, EventArgs e)
-        {
-            var portName = (sender as ComboBox).SelectedItem.ToString();
-            if (ConnectionConfiguration.ConnectionName == portName)
-            {
-                return;
-            }
-
-            SendButton.Enabled = true;
-            ClearTextBoxes();
-            Connection?.Dispose();
-            ConnectionConfiguration.ConnectionName = portName;
-            Connection = new Connection(ConnectionConfiguration);
         }
 
         private void SendButton_Click(object sender, EventArgs e)
@@ -71,9 +57,43 @@ namespace Lab_1
         {
             Connection?.ChangeFlowState(!Connection.GetDebugInfo().IsCurrentPortBusy);
 
-            XOnXOffButton.Text = Connection?.GetDebugInfo().IsCurrentPortBusy ?? false
+            XOnXOffButton.Text = Connection?.GetDebugInfo().IsCurrentPortBusy ?? true
                 ? "Send XOn"
                 : "Send XOff";
+        }
+
+        private void Open_port_button_Click(object sender, EventArgs e)
+        {
+            var portName = AvailablePorts.SelectedItem?.ToString();
+            if (string.IsNullOrEmpty(portName))
+            {
+                return;
+            }
+
+            ConnectionConfiguration.ConnectionName = portName;
+            Connection = new Connection(ConnectionConfiguration);
+            if (!Connection.IsConnectionEstablished)
+            {
+                Close_port_button_Click(null, null);
+                return;
+            }
+            ChangeCurrentStateOfPort(true);
+        }
+
+        private void Close_port_button_Click(object sender, EventArgs e)
+        {
+            ClearTextBoxes();
+            Connection?.Dispose();
+            ChangeCurrentStateOfPort(false);
+        }
+
+        private void ChangeCurrentStateOfPort(bool isNeedToOpen)
+        {
+            SendButton.Enabled = isNeedToOpen;
+            Close_port_button.Enabled = isNeedToOpen;
+            Open_port_button.Enabled = !isNeedToOpen;
+            AvailablePorts.Enabled = !isNeedToOpen;
+            XOnXOffButton.Enabled = isNeedToOpen;
         }
     }
 }

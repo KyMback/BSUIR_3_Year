@@ -1,10 +1,10 @@
 ﻿using System;
 using System.ComponentModel;
-using System.Linq;
-using System.Management;
+using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading;
 using System.Windows.Forms;
-using Microsoft.Win32;
+using cmd;
 
 namespace Lab_3
 {
@@ -13,15 +13,31 @@ namespace Lab_3
         public PowerLineStatus PowerLineStatus { get; private set; }
 
         public float BatteryLifePercent { get; private set; }
-        
+
         public static void Main(string[] args)
         {
             var program = new Program();
+            
             while (true)
             {
                 program.WriteStatus(SystemInformation.PowerStatus.PowerLineStatus,
                     SystemInformation.PowerStatus.BatteryLifePercent);
             }
+        }
+
+        private string GetChargeSafeType()
+        {
+            dynamic cmd = new Cmd();
+            var regex = new Regex(@"[(](?<type>\w*).*[*]");
+            MatchCollection matches = regex.Matches(cmd.powercfg("-l").ToString());
+
+            StringBuilder builder = new StringBuilder();
+            for (int i = 1; i < matches.Count; i++)
+            {
+                builder.Append(matches[i].Groups["type"].Value);
+            }
+
+            return builder.ToString();
         }
 
         private void WriteStatus(PowerLineStatus status, float batteryLifePercent)
@@ -31,14 +47,16 @@ namespace Lab_3
                 Thread.Sleep(1000);
                 return;
             }
-            
             Console.Clear();
+            Console.WriteLine(GetChargeSafeType());
             Console.WriteLine($"Power supply type: {GetPowerSupplyType(status)}");
             Console.WriteLine($"Battery level: {batteryLifePercent:P}");
             
             BatteryLifePercent = batteryLifePercent;
             PowerLineStatus = status;
         }
+
+
 
         private static string GetPowerSupplyType(PowerLineStatus status)
         {
