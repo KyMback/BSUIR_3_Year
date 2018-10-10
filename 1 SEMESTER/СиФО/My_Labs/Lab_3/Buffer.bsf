@@ -20,9 +20,9 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 216 112)
+	(rect 16 16 280 144)
 	(text "Buffer" (rect 5 0 41 14)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 80 25 92)(font "Arial" ))
+	(text "inst" (rect 8 112 25 124)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -33,25 +33,32 @@ applicable agreement for further details.
 	(port
 		(pt 0 48)
 		(input)
-		(text "clr_write" (rect 0 0 50 14)(font "Arial" (font_size 8)))
-		(text "clr_write" (rect 21 43 71 57)(font "Arial" (font_size 8)))
+		(text "clk_buffer" (rect 0 0 57 14)(font "Arial" (font_size 8)))
+		(text "clk_buffer" (rect 21 43 78 57)(font "Arial" (font_size 8)))
 		(line (pt 0 48)(pt 16 48)(line_width 1))
 	)
 	(port
 		(pt 0 64)
 		(input)
-		(text "clr_read" (rect 0 0 47 14)(font "Arial" (font_size 8)))
-		(text "clr_read" (rect 21 59 68 73)(font "Arial" (font_size 8)))
+		(text "buffer_1write_0read" (rect 0 0 119 14)(font "Arial" (font_size 8)))
+		(text "buffer_1write_0read" (rect 21 59 140 73)(font "Arial" (font_size 8)))
 		(line (pt 0 64)(pt 16 64)(line_width 1))
 	)
 	(port
-		(pt 200 32)
+		(pt 0 80)
+		(input)
+		(text "init_buffer" (rect 0 0 57 14)(font "Arial" (font_size 8)))
+		(text "init_buffer" (rect 21 75 78 89)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80)(line_width 1))
+	)
+	(port
+		(pt 264 32)
 		(output)
 		(text "outputData[7..0]" (rect 0 0 89 14)(font "Arial" (font_size 8)))
-		(text "outputData[7..0]" (rect 90 27 179 41)(font "Arial" (font_size 8)))
-		(line (pt 200 32)(pt 184 32)(line_width 3))
+		(text "outputData[7..0]" (rect 154 27 243 41)(font "Arial" (font_size 8)))
+		(line (pt 264 32)(pt 248 32)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 184 80)(line_width 1))
+		(rectangle (rect 16 16 248 112)(line_width 1))
 	)
 )

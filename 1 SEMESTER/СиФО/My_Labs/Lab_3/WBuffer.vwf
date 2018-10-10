@@ -212,7 +212,7 @@ SIGNAL("outputData[0]")
 	PARENT = "outputData";
 }
 
-SIGNAL("clr_read")
+SIGNAL("buffer_1write_0read")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -222,7 +222,7 @@ SIGNAL("clr_read")
 	PARENT = "";
 }
 
-SIGNAL("clr_write")
+SIGNAL("clk_buffer")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -382,41 +382,38 @@ TRANSITION_LIST("outputData[0]")
 	}
 }
 
-TRANSITION_LIST("clr_read")
+TRANSITION_LIST("buffer_1write_0read")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 110.0;
-		LEVEL 1 FOR 10.0;
-		NODE
-		{
-			REPEAT = 3;
-			LEVEL 0 FOR 10.0;
-			LEVEL 1 FOR 10.0;
-		}
-		LEVEL 0 FOR 820.0;
+		LEVEL 1 FOR 80.0;
+		LEVEL 0 FOR 920.0;
 	}
 }
 
-TRANSITION_LIST("clr_write")
+TRANSITION_LIST("clk_buffer")
 {
 	NODE
 	{
 		REPEAT = 1;
 		NODE
 		{
-			REPEAT = 1;
+			REPEAT = 4;
 			LEVEL 0 FOR 10.0;
 			LEVEL 1 FOR 10.0;
-			NODE
-			{
-				REPEAT = 3;
-				LEVEL 0 FOR 10.0;
-				LEVEL 1 FOR 10.0;
-			}
 		}
-		LEVEL 0 FOR 920.0;
+		LEVEL 0 FOR 30.0;
+		LEVEL 1 FOR 10.0;
+		NODE
+		{
+			REPEAT = 2;
+			LEVEL 0 FOR 10.0;
+			LEVEL 1 FOR 10.0;
+		}
+		LEVEL 0 FOR 10.0;
+		LEVEL 1 FOR 10.0;
+		LEVEL 0 FOR 820.0;
 	}
 }
 
@@ -602,7 +599,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "clr_read";
+	CHANNEL = "buffer_1write_0read";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 18;
@@ -611,7 +608,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "clr_write";
+	CHANNEL = "clk_buffer";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 19;
