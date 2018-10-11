@@ -104,186 +104,6 @@ SIGNAL("address[0]")
 	PARENT = "address";
 }
 
-SIGNAL("buffer_input_test")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = BUS;
-	WIDTH = 8;
-	LSB_INDEX = 0;
-	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
-SIGNAL("buffer_input_test[7]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "buffer_input_test";
-}
-
-SIGNAL("buffer_input_test[6]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "buffer_input_test";
-}
-
-SIGNAL("buffer_input_test[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "buffer_input_test";
-}
-
-SIGNAL("buffer_input_test[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "buffer_input_test";
-}
-
-SIGNAL("buffer_input_test[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "buffer_input_test";
-}
-
-SIGNAL("buffer_input_test[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "buffer_input_test";
-}
-
-SIGNAL("buffer_input_test[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "buffer_input_test";
-}
-
-SIGNAL("buffer_input_test[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "buffer_input_test";
-}
-
-SIGNAL("buffer_output")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = BUS;
-	WIDTH = 8;
-	LSB_INDEX = 0;
-	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
-SIGNAL("buffer_output[7]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "buffer_output";
-}
-
-SIGNAL("buffer_output[6]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "buffer_output";
-}
-
-SIGNAL("buffer_output[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "buffer_output";
-}
-
-SIGNAL("buffer_output[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "buffer_output";
-}
-
-SIGNAL("buffer_output[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "buffer_output";
-}
-
-SIGNAL("buffer_output[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "buffer_output";
-}
-
-SIGNAL("buffer_output[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "buffer_output";
-}
-
-SIGNAL("buffer_output[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "buffer_output";
-}
-
 SIGNAL("buffer_size")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
@@ -564,96 +384,6 @@ SIGNAL("delay[0]")
 	PARENT = "delay";
 }
 
-SIGNAL("inputdata")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = BUS;
-	WIDTH = 8;
-	LSB_INDEX = 0;
-	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
-SIGNAL("inputdata[7]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "inputdata";
-}
-
-SIGNAL("inputdata[6]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "inputdata";
-}
-
-SIGNAL("inputdata[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "inputdata";
-}
-
-SIGNAL("inputdata[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "inputdata";
-}
-
-SIGNAL("inputdata[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "inputdata";
-}
-
-SIGNAL("inputdata[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "inputdata";
-}
-
-SIGNAL("inputdata[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "inputdata";
-}
-
-SIGNAL("inputdata[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "inputdata";
-}
-
 SIGNAL("rom_ram")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
@@ -672,501 +402,6 @@ SIGNAL("start")
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
 	PARENT = "";
-}
-
-SIGNAL("clk_getData_test")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
-SIGNAL("clk_start_test")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
-SIGNAL("buffer_clk_test")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
-SIGNAL("clk_ram_write")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
-SIGNAL("ram_out_test[7]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
-SIGNAL("ram_out_test[6]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
-SIGNAL("ram_out_test[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
-SIGNAL("ram_out_test[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
-SIGNAL("ram_out_test[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
-SIGNAL("ram_out_test[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
-SIGNAL("ram_out_test[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
-SIGNAL("ram_out_test[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
-SIGNAL("altera_reserved_tdo")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "";
-}
-
-GROUP("ram_out_test")
-{
-	MEMBERS = "ram_out_test[7]", "ram_out_test[6]", "ram_out_test[5]", "ram_out_test[4]", "ram_out_test[3]", "ram_out_test[2]", "ram_out_test[1]", "ram_out_test[0]";
-}
-
-SIGNAL("Buffer:inst|lpm_dff1:buffer_1|lpm_ff:lpm_ff_component|dffs")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = BUS;
-	WIDTH = 8;
-	LSB_INDEX = 0;
-	DIRECTION = BURIED;
-	PARENT = "";
-}
-
-SIGNAL("Buffer:inst|lpm_dff1:buffer_1|lpm_ff:lpm_ff_component|dffs[7]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = BURIED;
-	PARENT = "Buffer:inst|lpm_dff1:buffer_1|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("Buffer:inst|lpm_dff1:buffer_1|lpm_ff:lpm_ff_component|dffs[6]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = BURIED;
-	PARENT = "Buffer:inst|lpm_dff1:buffer_1|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("Buffer:inst|lpm_dff1:buffer_1|lpm_ff:lpm_ff_component|dffs[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = BURIED;
-	PARENT = "Buffer:inst|lpm_dff1:buffer_1|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("Buffer:inst|lpm_dff1:buffer_1|lpm_ff:lpm_ff_component|dffs[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = BURIED;
-	PARENT = "Buffer:inst|lpm_dff1:buffer_1|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("Buffer:inst|lpm_dff1:buffer_1|lpm_ff:lpm_ff_component|dffs[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = BURIED;
-	PARENT = "Buffer:inst|lpm_dff1:buffer_1|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("Buffer:inst|lpm_dff1:buffer_1|lpm_ff:lpm_ff_component|dffs[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = BURIED;
-	PARENT = "Buffer:inst|lpm_dff1:buffer_1|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("Buffer:inst|lpm_dff1:buffer_1|lpm_ff:lpm_ff_component|dffs[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = BURIED;
-	PARENT = "Buffer:inst|lpm_dff1:buffer_1|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("Buffer:inst|lpm_dff1:buffer_1|lpm_ff:lpm_ff_component|dffs[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = BURIED;
-	PARENT = "Buffer:inst|lpm_dff1:buffer_1|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("Buffer:inst|lpm_dff1:buffer_2|lpm_ff:lpm_ff_component|dffs")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = BUS;
-	WIDTH = 8;
-	LSB_INDEX = 0;
-	DIRECTION = BURIED;
-	PARENT = "";
-}
-
-SIGNAL("Buffer:inst|lpm_dff1:buffer_2|lpm_ff:lpm_ff_component|dffs[7]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = BURIED;
-	PARENT = "Buffer:inst|lpm_dff1:buffer_2|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("Buffer:inst|lpm_dff1:buffer_2|lpm_ff:lpm_ff_component|dffs[6]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = BURIED;
-	PARENT = "Buffer:inst|lpm_dff1:buffer_2|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("Buffer:inst|lpm_dff1:buffer_2|lpm_ff:lpm_ff_component|dffs[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = BURIED;
-	PARENT = "Buffer:inst|lpm_dff1:buffer_2|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("Buffer:inst|lpm_dff1:buffer_2|lpm_ff:lpm_ff_component|dffs[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = BURIED;
-	PARENT = "Buffer:inst|lpm_dff1:buffer_2|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("Buffer:inst|lpm_dff1:buffer_2|lpm_ff:lpm_ff_component|dffs[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = BURIED;
-	PARENT = "Buffer:inst|lpm_dff1:buffer_2|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("Buffer:inst|lpm_dff1:buffer_2|lpm_ff:lpm_ff_component|dffs[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = BURIED;
-	PARENT = "Buffer:inst|lpm_dff1:buffer_2|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("Buffer:inst|lpm_dff1:buffer_2|lpm_ff:lpm_ff_component|dffs[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = BURIED;
-	PARENT = "Buffer:inst|lpm_dff1:buffer_2|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("Buffer:inst|lpm_dff1:buffer_2|lpm_ff:lpm_ff_component|dffs[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = BURIED;
-	PARENT = "Buffer:inst|lpm_dff1:buffer_2|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("Buffer:inst|lpm_dff1:buffer_3|lpm_ff:lpm_ff_component|dffs")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = BUS;
-	WIDTH = 8;
-	LSB_INDEX = 0;
-	DIRECTION = BURIED;
-	PARENT = "";
-}
-
-SIGNAL("Buffer:inst|lpm_dff1:buffer_3|lpm_ff:lpm_ff_component|dffs[7]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = BURIED;
-	PARENT = "Buffer:inst|lpm_dff1:buffer_3|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("Buffer:inst|lpm_dff1:buffer_3|lpm_ff:lpm_ff_component|dffs[6]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = BURIED;
-	PARENT = "Buffer:inst|lpm_dff1:buffer_3|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("Buffer:inst|lpm_dff1:buffer_3|lpm_ff:lpm_ff_component|dffs[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = BURIED;
-	PARENT = "Buffer:inst|lpm_dff1:buffer_3|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("Buffer:inst|lpm_dff1:buffer_3|lpm_ff:lpm_ff_component|dffs[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = BURIED;
-	PARENT = "Buffer:inst|lpm_dff1:buffer_3|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("Buffer:inst|lpm_dff1:buffer_3|lpm_ff:lpm_ff_component|dffs[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = BURIED;
-	PARENT = "Buffer:inst|lpm_dff1:buffer_3|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("Buffer:inst|lpm_dff1:buffer_3|lpm_ff:lpm_ff_component|dffs[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = BURIED;
-	PARENT = "Buffer:inst|lpm_dff1:buffer_3|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("Buffer:inst|lpm_dff1:buffer_3|lpm_ff:lpm_ff_component|dffs[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = BURIED;
-	PARENT = "Buffer:inst|lpm_dff1:buffer_3|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("Buffer:inst|lpm_dff1:buffer_3|lpm_ff:lpm_ff_component|dffs[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = BURIED;
-	PARENT = "Buffer:inst|lpm_dff1:buffer_3|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("Buffer:inst|lpm_dff1:buffer_4|lpm_ff:lpm_ff_component|dffs")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = BUS;
-	WIDTH = 8;
-	LSB_INDEX = 0;
-	DIRECTION = BURIED;
-	PARENT = "";
-}
-
-SIGNAL("Buffer:inst|lpm_dff1:buffer_4|lpm_ff:lpm_ff_component|dffs[7]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = BURIED;
-	PARENT = "Buffer:inst|lpm_dff1:buffer_4|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("Buffer:inst|lpm_dff1:buffer_4|lpm_ff:lpm_ff_component|dffs[6]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = BURIED;
-	PARENT = "Buffer:inst|lpm_dff1:buffer_4|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("Buffer:inst|lpm_dff1:buffer_4|lpm_ff:lpm_ff_component|dffs[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = BURIED;
-	PARENT = "Buffer:inst|lpm_dff1:buffer_4|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("Buffer:inst|lpm_dff1:buffer_4|lpm_ff:lpm_ff_component|dffs[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = BURIED;
-	PARENT = "Buffer:inst|lpm_dff1:buffer_4|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("Buffer:inst|lpm_dff1:buffer_4|lpm_ff:lpm_ff_component|dffs[3]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = BURIED;
-	PARENT = "Buffer:inst|lpm_dff1:buffer_4|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("Buffer:inst|lpm_dff1:buffer_4|lpm_ff:lpm_ff_component|dffs[2]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = BURIED;
-	PARENT = "Buffer:inst|lpm_dff1:buffer_4|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("Buffer:inst|lpm_dff1:buffer_4|lpm_ff:lpm_ff_component|dffs[1]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = BURIED;
-	PARENT = "Buffer:inst|lpm_dff1:buffer_4|lpm_ff:lpm_ff_component|dffs";
-}
-
-SIGNAL("Buffer:inst|lpm_dff1:buffer_4|lpm_ff:lpm_ff_component|dffs[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = BURIED;
-	PARENT = "Buffer:inst|lpm_dff1:buffer_4|lpm_ff:lpm_ff_component|dffs";
 }
 
 TRANSITION_LIST("address[4]")
@@ -1192,9 +427,9 @@ TRANSITION_LIST("address[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 160.0;
-		LEVEL 1 FOR 280.0;
-		LEVEL 0 FOR 560.0;
+		LEVEL 0 FOR 250.0;
+		LEVEL 1 FOR 360.0;
+		LEVEL 0 FOR 390.0;
 	}
 }
 
@@ -1203,7 +438,10 @@ TRANSITION_LIST("address[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 250.0;
+		LEVEL 0 FOR 160.0;
+		LEVEL 1 FOR 200.0;
+		LEVEL 0 FOR 390.0;
 	}
 }
 
@@ -1212,216 +450,8 @@ TRANSITION_LIST("address[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 160.0;
-		LEVEL 0 FOR 840.0;
-	}
-}
-
-TRANSITION_LIST("buffer_input_test[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL Z FOR 50.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL Z FOR 220.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL Z FOR 570.0;
-	}
-}
-
-TRANSITION_LIST("buffer_input_test[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL Z FOR 50.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL Z FOR 220.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL Z FOR 570.0;
-	}
-}
-
-TRANSITION_LIST("buffer_input_test[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL Z FOR 50.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL Z FOR 220.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL Z FOR 570.0;
-	}
-}
-
-TRANSITION_LIST("buffer_input_test[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL Z FOR 50.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL Z FOR 220.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL Z FOR 570.0;
-	}
-}
-
-TRANSITION_LIST("buffer_input_test[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL Z FOR 50.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL Z FOR 220.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL Z FOR 570.0;
-	}
-}
-
-TRANSITION_LIST("buffer_input_test[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL Z FOR 50.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL Z FOR 220.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL Z FOR 570.0;
-	}
-}
-
-TRANSITION_LIST("buffer_input_test[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL Z FOR 50.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL Z FOR 220.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL Z FOR 570.0;
-	}
-}
-
-TRANSITION_LIST("buffer_input_test[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL Z FOR 50.0;
-		NODE
-		{
-			REPEAT = 2;
-			LEVEL 1 FOR 20.0;
-			LEVEL 0 FOR 20.0;
-		}
-		LEVEL Z FOR 220.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL Z FOR 570.0;
-	}
-}
-
-TRANSITION_LIST("buffer_output[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("buffer_output[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("buffer_output[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("buffer_output[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("buffer_output[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("buffer_output[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 170.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 80.0;
-		LEVEL 0 FOR 160.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 490.0;
-	}
-}
-
-TRANSITION_LIST("buffer_output[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 190.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 280.0;
-		LEVEL 1 FOR 490.0;
-	}
-}
-
-TRANSITION_LIST("buffer_output[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 170.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 240.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 470.0;
+		LEVEL 0 FOR 610.0;
+		LEVEL 1 FOR 390.0;
 	}
 }
 
@@ -1502,15 +532,7 @@ TRANSITION_LIST("bus_data[7]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL Z FOR 50.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL Z FOR 40.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL Z FOR 100.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL Z FOR 40.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL Z FOR 450.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -1519,15 +541,7 @@ TRANSITION_LIST("bus_data[6]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL Z FOR 50.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL Z FOR 40.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL Z FOR 100.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL Z FOR 40.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL Z FOR 450.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -1536,15 +550,7 @@ TRANSITION_LIST("bus_data[5]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL Z FOR 50.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL Z FOR 40.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL Z FOR 100.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL Z FOR 40.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL Z FOR 450.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -1553,15 +559,7 @@ TRANSITION_LIST("bus_data[4]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL Z FOR 50.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL Z FOR 40.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL Z FOR 100.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL Z FOR 40.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL Z FOR 450.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -1570,15 +568,7 @@ TRANSITION_LIST("bus_data[3]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL Z FOR 50.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL Z FOR 40.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL Z FOR 100.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL Z FOR 40.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL Z FOR 450.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -1587,22 +577,7 @@ TRANSITION_LIST("bus_data[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL Z FOR 50.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL Z FOR 40.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL Z FOR 100.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL Z FOR 40.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL Z FOR 450.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -1611,22 +586,7 @@ TRANSITION_LIST("bus_data[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL Z FOR 50.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL Z FOR 40.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL Z FOR 100.0;
-		LEVEL 0 FOR 30.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL Z FOR 40.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL Z FOR 450.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -1635,30 +595,7 @@ TRANSITION_LIST("bus_data[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL Z FOR 50.0;
-		NODE
-		{
-			REPEAT = 2;
-			LEVEL 1 FOR 20.0;
-			LEVEL 0 FOR 20.0;
-		}
-		LEVEL Z FOR 40.0;
-		NODE
-		{
-			REPEAT = 2;
-			LEVEL 1 FOR 20.0;
-			LEVEL 0 FOR 20.0;
-		}
-		LEVEL Z FOR 100.0;
-		LEVEL 1 FOR 30.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 10.0;
-		LEVEL Z FOR 40.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL Z FOR 450.0;
+		LEVEL X FOR 1000.0;
 	}
 }
 
@@ -1726,7 +663,7 @@ TRANSITION_LIST("delay[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -1735,7 +672,7 @@ TRANSITION_LIST("delay[1]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
+		LEVEL 1 FOR 1000.0;
 	}
 }
 
@@ -1744,124 +681,7 @@ TRANSITION_LIST("delay[0]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("inputdata[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL Z FOR 170.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL Z FOR 220.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL Z FOR 450.0;
-	}
-}
-
-TRANSITION_LIST("inputdata[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL Z FOR 170.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL Z FOR 220.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL Z FOR 450.0;
-	}
-}
-
-TRANSITION_LIST("inputdata[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL Z FOR 170.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL Z FOR 220.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL Z FOR 450.0;
-	}
-}
-
-TRANSITION_LIST("inputdata[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL Z FOR 170.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL Z FOR 220.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL Z FOR 450.0;
-	}
-}
-
-TRANSITION_LIST("inputdata[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL Z FOR 170.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL Z FOR 220.0;
-		LEVEL 0 FOR 80.0;
-		LEVEL Z FOR 450.0;
-	}
-}
-
-TRANSITION_LIST("inputdata[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL Z FOR 170.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL Z FOR 220.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL Z FOR 450.0;
-	}
-}
-
-TRANSITION_LIST("inputdata[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL Z FOR 170.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL Z FOR 220.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL Z FOR 450.0;
-	}
-}
-
-TRANSITION_LIST("inputdata[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL Z FOR 170.0;
-		NODE
-		{
-			REPEAT = 2;
-			LEVEL 1 FOR 20.0;
-			LEVEL 0 FOR 20.0;
-		}
-		LEVEL Z FOR 220.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL Z FOR 450.0;
+		LEVEL 0 FOR 1000.0;
 	}
 }
 
@@ -1870,8 +690,9 @@ TRANSITION_LIST("rom_ram")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 310.0;
-		LEVEL 0 FOR 690.0;
+		LEVEL 1 FOR 410.0;
+		LEVEL 0 FOR 490.0;
+		LEVEL 1 FOR 100.0;
 	}
 }
 
@@ -1882,494 +703,9 @@ TRANSITION_LIST("start")
 		REPEAT = 1;
 		LEVEL 0 FOR 10.0;
 		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 290.0;
+		LEVEL 0 FOR 390.0;
 		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 680.0;
-	}
-}
-
-TRANSITION_LIST("clk_getData_test")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 50.0;
-		NODE
-		{
-			REPEAT = 3;
-			LEVEL 1 FOR 10.0;
-			LEVEL 0 FOR 10.0;
-		}
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 880.0;
-	}
-}
-
-TRANSITION_LIST("clk_start_test")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 10.0;
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 980.0;
-	}
-}
-
-TRANSITION_LIST("buffer_clk_test")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 60.0;
-		NODE
-		{
-			REPEAT = 3;
-			LEVEL 1 FOR 10.0;
-			LEVEL 0 FOR 10.0;
-		}
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 40.0;
-		NODE
-		{
-			REPEAT = 3;
-			LEVEL 1 FOR 10.0;
-			LEVEL 0 FOR 10.0;
-		}
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 120.0;
-		NODE
-		{
-			REPEAT = 3;
-			LEVEL 1 FOR 10.0;
-			LEVEL 0 FOR 10.0;
-		}
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 40.0;
-		NODE
-		{
-			REPEAT = 3;
-			LEVEL 1 FOR 10.0;
-			LEVEL 0 FOR 10.0;
-		}
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 460.0;
-	}
-}
-
-TRANSITION_LIST("clk_ram_write")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 180.0;
-		NODE
-		{
-			REPEAT = 3;
-			LEVEL 1 FOR 10.0;
-			LEVEL 0 FOR 10.0;
-		}
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 100.0;
-		NODE
-		{
-			REPEAT = 3;
-			LEVEL 1 FOR 10.0;
-			LEVEL 0 FOR 10.0;
-		}
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 60.0;
-		NODE
-		{
-			REPEAT = 3;
-			LEVEL 1 FOR 10.0;
-			LEVEL 0 FOR 10.0;
-		}
-		LEVEL 1 FOR 10.0;
-		LEVEL 0 FOR 450.0;
-	}
-}
-
-TRANSITION_LIST("ram_out_test[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("ram_out_test[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("ram_out_test[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("ram_out_test[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("ram_out_test[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("ram_out_test[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 250.0;
-		LEVEL 1 FOR 70.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 40.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 540.0;
-	}
-}
-
-TRANSITION_LIST("ram_out_test[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 380.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 130.0;
-		LEVEL 1 FOR 450.0;
-	}
-}
-
-TRANSITION_LIST("ram_out_test[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 340.0;
-		LEVEL 1 FOR 40.0;
-		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 20.0;
-		LEVEL 0 FOR 130.0;
-		LEVEL 1 FOR 450.0;
-	}
-}
-
-TRANSITION_LIST("altera_reserved_tdo")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("Buffer:inst|lpm_dff1:buffer_1|lpm_ff:lpm_ff_component|dffs[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("Buffer:inst|lpm_dff1:buffer_1|lpm_ff:lpm_ff_component|dffs[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("Buffer:inst|lpm_dff1:buffer_1|lpm_ff:lpm_ff_component|dffs[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("Buffer:inst|lpm_dff1:buffer_1|lpm_ff:lpm_ff_component|dffs[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("Buffer:inst|lpm_dff1:buffer_1|lpm_ff:lpm_ff_component|dffs[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("Buffer:inst|lpm_dff1:buffer_1|lpm_ff:lpm_ff_component|dffs[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("Buffer:inst|lpm_dff1:buffer_1|lpm_ff:lpm_ff_component|dffs[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("Buffer:inst|lpm_dff1:buffer_1|lpm_ff:lpm_ff_component|dffs[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("Buffer:inst|lpm_dff1:buffer_2|lpm_ff:lpm_ff_component|dffs[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("Buffer:inst|lpm_dff1:buffer_2|lpm_ff:lpm_ff_component|dffs[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("Buffer:inst|lpm_dff1:buffer_2|lpm_ff:lpm_ff_component|dffs[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("Buffer:inst|lpm_dff1:buffer_2|lpm_ff:lpm_ff_component|dffs[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("Buffer:inst|lpm_dff1:buffer_2|lpm_ff:lpm_ff_component|dffs[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("Buffer:inst|lpm_dff1:buffer_2|lpm_ff:lpm_ff_component|dffs[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("Buffer:inst|lpm_dff1:buffer_2|lpm_ff:lpm_ff_component|dffs[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("Buffer:inst|lpm_dff1:buffer_2|lpm_ff:lpm_ff_component|dffs[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("Buffer:inst|lpm_dff1:buffer_3|lpm_ff:lpm_ff_component|dffs[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("Buffer:inst|lpm_dff1:buffer_3|lpm_ff:lpm_ff_component|dffs[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("Buffer:inst|lpm_dff1:buffer_3|lpm_ff:lpm_ff_component|dffs[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("Buffer:inst|lpm_dff1:buffer_3|lpm_ff:lpm_ff_component|dffs[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("Buffer:inst|lpm_dff1:buffer_3|lpm_ff:lpm_ff_component|dffs[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("Buffer:inst|lpm_dff1:buffer_3|lpm_ff:lpm_ff_component|dffs[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("Buffer:inst|lpm_dff1:buffer_3|lpm_ff:lpm_ff_component|dffs[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("Buffer:inst|lpm_dff1:buffer_3|lpm_ff:lpm_ff_component|dffs[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("Buffer:inst|lpm_dff1:buffer_4|lpm_ff:lpm_ff_component|dffs[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("Buffer:inst|lpm_dff1:buffer_4|lpm_ff:lpm_ff_component|dffs[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("Buffer:inst|lpm_dff1:buffer_4|lpm_ff:lpm_ff_component|dffs[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("Buffer:inst|lpm_dff1:buffer_4|lpm_ff:lpm_ff_component|dffs[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("Buffer:inst|lpm_dff1:buffer_4|lpm_ff:lpm_ff_component|dffs[3]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("Buffer:inst|lpm_dff1:buffer_4|lpm_ff:lpm_ff_component|dffs[2]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("Buffer:inst|lpm_dff1:buffer_4|lpm_ff:lpm_ff_component|dffs[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("Buffer:inst|lpm_dff1:buffer_4|lpm_ff:lpm_ff_component|dffs[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL U FOR 1000.0;
+		LEVEL 0 FOR 580.0;
 	}
 }
 
@@ -2435,7 +771,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "buffer_input_test";
+	CHANNEL = "buffer_size";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 6;
@@ -2445,7 +781,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "buffer_input_test[7]";
+	CHANNEL = "buffer_size[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 7;
@@ -2455,7 +791,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "buffer_input_test[6]";
+	CHANNEL = "buffer_size[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 8;
@@ -2465,7 +801,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "buffer_input_test[5]";
+	CHANNEL = "buffer_size[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 9;
@@ -2475,7 +811,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "buffer_input_test[4]";
+	CHANNEL = "buffer_size[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 10;
@@ -2485,7 +821,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "buffer_input_test[3]";
+	CHANNEL = "buffer_size[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 11;
@@ -2495,7 +831,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "buffer_input_test[2]";
+	CHANNEL = "buffer_size[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 12;
@@ -2505,7 +841,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "buffer_input_test[1]";
+	CHANNEL = "buffer_size[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 13;
@@ -2515,7 +851,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "buffer_input_test[0]";
+	CHANNEL = "buffer_size[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 14;
@@ -2525,7 +861,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "buffer_output";
+	CHANNEL = "bus_data";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 15;
@@ -2535,7 +871,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "buffer_output[7]";
+	CHANNEL = "bus_data[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 16;
@@ -2545,7 +881,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "buffer_output[6]";
+	CHANNEL = "bus_data[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 17;
@@ -2555,7 +891,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "buffer_output[5]";
+	CHANNEL = "bus_data[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 18;
@@ -2565,7 +901,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "buffer_output[4]";
+	CHANNEL = "bus_data[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 19;
@@ -2575,7 +911,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "buffer_output[3]";
+	CHANNEL = "bus_data[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 20;
@@ -2585,7 +921,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "buffer_output[2]";
+	CHANNEL = "bus_data[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 21;
@@ -2595,7 +931,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "buffer_output[1]";
+	CHANNEL = "bus_data[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 22;
@@ -2605,7 +941,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "buffer_output[0]";
+	CHANNEL = "bus_data[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 23;
@@ -2615,190 +951,10 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "buffer_size";
+	CHANNEL = "clk";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
 	TREE_INDEX = 24;
-	TREE_LEVEL = 0;
-	CHILDREN = 25, 26, 27, 28, 29, 30, 31, 32;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "buffer_size[7]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 25;
-	TREE_LEVEL = 1;
-	PARENT = 24;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "buffer_size[6]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 26;
-	TREE_LEVEL = 1;
-	PARENT = 24;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "buffer_size[5]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 27;
-	TREE_LEVEL = 1;
-	PARENT = 24;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "buffer_size[4]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 28;
-	TREE_LEVEL = 1;
-	PARENT = 24;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "buffer_size[3]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 29;
-	TREE_LEVEL = 1;
-	PARENT = 24;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "buffer_size[2]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 30;
-	TREE_LEVEL = 1;
-	PARENT = 24;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "buffer_size[1]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 31;
-	TREE_LEVEL = 1;
-	PARENT = 24;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "buffer_size[0]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 32;
-	TREE_LEVEL = 1;
-	PARENT = 24;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "bus_data";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 33;
-	TREE_LEVEL = 0;
-	CHILDREN = 34, 35, 36, 37, 38, 39, 40, 41;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "bus_data[7]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 34;
-	TREE_LEVEL = 1;
-	PARENT = 33;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "bus_data[6]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 35;
-	TREE_LEVEL = 1;
-	PARENT = 33;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "bus_data[5]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 36;
-	TREE_LEVEL = 1;
-	PARENT = 33;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "bus_data[4]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 37;
-	TREE_LEVEL = 1;
-	PARENT = 33;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "bus_data[3]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 38;
-	TREE_LEVEL = 1;
-	PARENT = 33;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "bus_data[2]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 39;
-	TREE_LEVEL = 1;
-	PARENT = 33;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "bus_data[1]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 40;
-	TREE_LEVEL = 1;
-	PARENT = 33;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "bus_data[0]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 41;
-	TREE_LEVEL = 1;
-	PARENT = 33;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "clk";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 42;
 	TREE_LEVEL = 0;
 }
 
@@ -2807,9 +963,9 @@ DISPLAY_LINE
 	CHANNEL = "delay";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
-	TREE_INDEX = 43;
+	TREE_INDEX = 25;
 	TREE_LEVEL = 0;
-	CHILDREN = 44, 45, 46, 47, 48, 49, 50, 51;
+	CHILDREN = 26, 27, 28, 29, 30, 31, 32, 33;
 }
 
 DISPLAY_LINE
@@ -2817,9 +973,9 @@ DISPLAY_LINE
 	CHANNEL = "delay[7]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
-	TREE_INDEX = 44;
+	TREE_INDEX = 26;
 	TREE_LEVEL = 1;
-	PARENT = 43;
+	PARENT = 25;
 }
 
 DISPLAY_LINE
@@ -2827,9 +983,9 @@ DISPLAY_LINE
 	CHANNEL = "delay[6]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
-	TREE_INDEX = 45;
+	TREE_INDEX = 27;
 	TREE_LEVEL = 1;
-	PARENT = 43;
+	PARENT = 25;
 }
 
 DISPLAY_LINE
@@ -2837,9 +993,9 @@ DISPLAY_LINE
 	CHANNEL = "delay[5]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
-	TREE_INDEX = 46;
+	TREE_INDEX = 28;
 	TREE_LEVEL = 1;
-	PARENT = 43;
+	PARENT = 25;
 }
 
 DISPLAY_LINE
@@ -2847,9 +1003,9 @@ DISPLAY_LINE
 	CHANNEL = "delay[4]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
-	TREE_INDEX = 47;
+	TREE_INDEX = 29;
 	TREE_LEVEL = 1;
-	PARENT = 43;
+	PARENT = 25;
 }
 
 DISPLAY_LINE
@@ -2857,9 +1013,9 @@ DISPLAY_LINE
 	CHANNEL = "delay[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
-	TREE_INDEX = 48;
+	TREE_INDEX = 30;
 	TREE_LEVEL = 1;
-	PARENT = 43;
+	PARENT = 25;
 }
 
 DISPLAY_LINE
@@ -2867,9 +1023,9 @@ DISPLAY_LINE
 	CHANNEL = "delay[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
-	TREE_INDEX = 49;
+	TREE_INDEX = 31;
 	TREE_LEVEL = 1;
-	PARENT = 43;
+	PARENT = 25;
 }
 
 DISPLAY_LINE
@@ -2877,9 +1033,9 @@ DISPLAY_LINE
 	CHANNEL = "delay[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
-	TREE_INDEX = 50;
+	TREE_INDEX = 32;
 	TREE_LEVEL = 1;
-	PARENT = 43;
+	PARENT = 25;
 }
 
 DISPLAY_LINE
@@ -2887,107 +1043,17 @@ DISPLAY_LINE
 	CHANNEL = "delay[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Unsigned;
-	TREE_INDEX = 51;
+	TREE_INDEX = 33;
 	TREE_LEVEL = 1;
-	PARENT = 43;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "inputdata";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 52;
-	TREE_LEVEL = 0;
-	CHILDREN = 53, 54, 55, 56, 57, 58, 59, 60;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "inputdata[7]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 53;
-	TREE_LEVEL = 1;
-	PARENT = 52;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "inputdata[6]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 54;
-	TREE_LEVEL = 1;
-	PARENT = 52;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "inputdata[5]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 55;
-	TREE_LEVEL = 1;
-	PARENT = 52;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "inputdata[4]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 56;
-	TREE_LEVEL = 1;
-	PARENT = 52;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "inputdata[3]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 57;
-	TREE_LEVEL = 1;
-	PARENT = 52;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "inputdata[2]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 58;
-	TREE_LEVEL = 1;
-	PARENT = 52;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "inputdata[1]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 59;
-	TREE_LEVEL = 1;
-	PARENT = 52;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "inputdata[0]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 60;
-	TREE_LEVEL = 1;
-	PARENT = 52;
+	PARENT = 25;
 }
 
 DISPLAY_LINE
 {
 	CHANNEL = "rom_ram";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 61;
+	RADIX = Unsigned;
+	TREE_INDEX = 34;
 	TREE_LEVEL = 0;
 }
 
@@ -2995,509 +1061,14 @@ DISPLAY_LINE
 {
 	CHANNEL = "start";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 62;
+	RADIX = Unsigned;
+	TREE_INDEX = 35;
 	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "clk_getData_test";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 63;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "clk_start_test";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 64;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "buffer_clk_test";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 65;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "clk_ram_write";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 66;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "ram_out_test";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 67;
-	TREE_LEVEL = 0;
-	CHILDREN = 68, 69, 70, 71, 72, 73, 74, 75;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "ram_out_test[7]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 68;
-	TREE_LEVEL = 1;
-	PARENT = 67;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "ram_out_test[6]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 69;
-	TREE_LEVEL = 1;
-	PARENT = 67;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "ram_out_test[5]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 70;
-	TREE_LEVEL = 1;
-	PARENT = 67;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "ram_out_test[4]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 71;
-	TREE_LEVEL = 1;
-	PARENT = 67;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "ram_out_test[3]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 72;
-	TREE_LEVEL = 1;
-	PARENT = 67;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "ram_out_test[2]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 73;
-	TREE_LEVEL = 1;
-	PARENT = 67;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "ram_out_test[1]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 74;
-	TREE_LEVEL = 1;
-	PARENT = 67;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "ram_out_test[0]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 75;
-	TREE_LEVEL = 1;
-	PARENT = 67;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "altera_reserved_tdo";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 76;
-	TREE_LEVEL = 0;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Buffer:inst|lpm_dff1:buffer_1|lpm_ff:lpm_ff_component|dffs";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 77;
-	TREE_LEVEL = 0;
-	CHILDREN = 78, 79, 80, 81, 82, 83, 84, 85;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Buffer:inst|lpm_dff1:buffer_1|lpm_ff:lpm_ff_component|dffs[7]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 78;
-	TREE_LEVEL = 1;
-	PARENT = 77;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Buffer:inst|lpm_dff1:buffer_1|lpm_ff:lpm_ff_component|dffs[6]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 79;
-	TREE_LEVEL = 1;
-	PARENT = 77;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Buffer:inst|lpm_dff1:buffer_1|lpm_ff:lpm_ff_component|dffs[5]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 80;
-	TREE_LEVEL = 1;
-	PARENT = 77;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Buffer:inst|lpm_dff1:buffer_1|lpm_ff:lpm_ff_component|dffs[4]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 81;
-	TREE_LEVEL = 1;
-	PARENT = 77;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Buffer:inst|lpm_dff1:buffer_1|lpm_ff:lpm_ff_component|dffs[3]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 82;
-	TREE_LEVEL = 1;
-	PARENT = 77;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Buffer:inst|lpm_dff1:buffer_1|lpm_ff:lpm_ff_component|dffs[2]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 83;
-	TREE_LEVEL = 1;
-	PARENT = 77;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Buffer:inst|lpm_dff1:buffer_1|lpm_ff:lpm_ff_component|dffs[1]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 84;
-	TREE_LEVEL = 1;
-	PARENT = 77;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Buffer:inst|lpm_dff1:buffer_1|lpm_ff:lpm_ff_component|dffs[0]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 85;
-	TREE_LEVEL = 1;
-	PARENT = 77;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Buffer:inst|lpm_dff1:buffer_2|lpm_ff:lpm_ff_component|dffs";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 86;
-	TREE_LEVEL = 0;
-	CHILDREN = 87, 88, 89, 90, 91, 92, 93, 94;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Buffer:inst|lpm_dff1:buffer_2|lpm_ff:lpm_ff_component|dffs[7]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 87;
-	TREE_LEVEL = 1;
-	PARENT = 86;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Buffer:inst|lpm_dff1:buffer_2|lpm_ff:lpm_ff_component|dffs[6]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 88;
-	TREE_LEVEL = 1;
-	PARENT = 86;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Buffer:inst|lpm_dff1:buffer_2|lpm_ff:lpm_ff_component|dffs[5]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 89;
-	TREE_LEVEL = 1;
-	PARENT = 86;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Buffer:inst|lpm_dff1:buffer_2|lpm_ff:lpm_ff_component|dffs[4]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 90;
-	TREE_LEVEL = 1;
-	PARENT = 86;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Buffer:inst|lpm_dff1:buffer_2|lpm_ff:lpm_ff_component|dffs[3]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 91;
-	TREE_LEVEL = 1;
-	PARENT = 86;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Buffer:inst|lpm_dff1:buffer_2|lpm_ff:lpm_ff_component|dffs[2]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 92;
-	TREE_LEVEL = 1;
-	PARENT = 86;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Buffer:inst|lpm_dff1:buffer_2|lpm_ff:lpm_ff_component|dffs[1]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 93;
-	TREE_LEVEL = 1;
-	PARENT = 86;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Buffer:inst|lpm_dff1:buffer_2|lpm_ff:lpm_ff_component|dffs[0]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 94;
-	TREE_LEVEL = 1;
-	PARENT = 86;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Buffer:inst|lpm_dff1:buffer_3|lpm_ff:lpm_ff_component|dffs";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 95;
-	TREE_LEVEL = 0;
-	CHILDREN = 96, 97, 98, 99, 100, 101, 102, 103;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Buffer:inst|lpm_dff1:buffer_3|lpm_ff:lpm_ff_component|dffs[7]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 96;
-	TREE_LEVEL = 1;
-	PARENT = 95;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Buffer:inst|lpm_dff1:buffer_3|lpm_ff:lpm_ff_component|dffs[6]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 97;
-	TREE_LEVEL = 1;
-	PARENT = 95;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Buffer:inst|lpm_dff1:buffer_3|lpm_ff:lpm_ff_component|dffs[5]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 98;
-	TREE_LEVEL = 1;
-	PARENT = 95;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Buffer:inst|lpm_dff1:buffer_3|lpm_ff:lpm_ff_component|dffs[4]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 99;
-	TREE_LEVEL = 1;
-	PARENT = 95;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Buffer:inst|lpm_dff1:buffer_3|lpm_ff:lpm_ff_component|dffs[3]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 100;
-	TREE_LEVEL = 1;
-	PARENT = 95;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Buffer:inst|lpm_dff1:buffer_3|lpm_ff:lpm_ff_component|dffs[2]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 101;
-	TREE_LEVEL = 1;
-	PARENT = 95;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Buffer:inst|lpm_dff1:buffer_3|lpm_ff:lpm_ff_component|dffs[1]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 102;
-	TREE_LEVEL = 1;
-	PARENT = 95;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Buffer:inst|lpm_dff1:buffer_3|lpm_ff:lpm_ff_component|dffs[0]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 103;
-	TREE_LEVEL = 1;
-	PARENT = 95;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Buffer:inst|lpm_dff1:buffer_4|lpm_ff:lpm_ff_component|dffs";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 104;
-	TREE_LEVEL = 0;
-	CHILDREN = 105, 106, 107, 108, 109, 110, 111, 112;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Buffer:inst|lpm_dff1:buffer_4|lpm_ff:lpm_ff_component|dffs[7]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 105;
-	TREE_LEVEL = 1;
-	PARENT = 104;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Buffer:inst|lpm_dff1:buffer_4|lpm_ff:lpm_ff_component|dffs[6]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 106;
-	TREE_LEVEL = 1;
-	PARENT = 104;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Buffer:inst|lpm_dff1:buffer_4|lpm_ff:lpm_ff_component|dffs[5]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 107;
-	TREE_LEVEL = 1;
-	PARENT = 104;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Buffer:inst|lpm_dff1:buffer_4|lpm_ff:lpm_ff_component|dffs[4]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 108;
-	TREE_LEVEL = 1;
-	PARENT = 104;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Buffer:inst|lpm_dff1:buffer_4|lpm_ff:lpm_ff_component|dffs[3]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 109;
-	TREE_LEVEL = 1;
-	PARENT = 104;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Buffer:inst|lpm_dff1:buffer_4|lpm_ff:lpm_ff_component|dffs[2]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 110;
-	TREE_LEVEL = 1;
-	PARENT = 104;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Buffer:inst|lpm_dff1:buffer_4|lpm_ff:lpm_ff_component|dffs[1]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 111;
-	TREE_LEVEL = 1;
-	PARENT = 104;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "Buffer:inst|lpm_dff1:buffer_4|lpm_ff:lpm_ff_component|dffs[0]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 112;
-	TREE_LEVEL = 1;
-	PARENT = 104;
 }
 
 TIME_BAR
 {
-	TIME = 340000;
+	TIME = 410000;
 	MASTER = TRUE;
 }
 ;

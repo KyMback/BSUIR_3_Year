@@ -86,6 +86,7 @@ set_global_assignment -name QIP_FILE lpm_counter3.qip
 set_global_assignment -name QIP_FILE lpm_counter4.qip
 set_global_assignment -name QIP_FILE lpm_constant0.qip
 set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE WLab_3.vwf
+set_global_assignment -name QIP_FILE lpm_add_sub3.qip
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
 set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
