@@ -27,6 +27,12 @@ namespace Lab_1
         private void ReceiveDataHandler(object sender, SerialDataReceivedEventArgs args)
         {
             string message = Connection.ReadMessage();
+
+            if (!Connection.GetDebugInfo().IsPortsInitialized)
+            {
+                return;
+            }
+
             if (string.IsNullOrEmpty(message))
             {
                 XOnXOffButton.Enabled = !Connection.GetDebugInfo().IsAnotherPortBusy;
@@ -57,9 +63,7 @@ namespace Lab_1
         {
             Connection?.ChangeFlowState(!Connection.GetDebugInfo().IsCurrentPortBusy);
 
-            XOnXOffButton.Text = Connection?.GetDebugInfo().IsCurrentPortBusy ?? true
-                ? "Send XOn"
-                : "Send XOff";
+            ChangeXOnXOffState();
         }
 
         private void Open_port_button_Click(object sender, EventArgs e)
@@ -74,6 +78,7 @@ namespace Lab_1
             Connection = new Connection(ConnectionConfiguration);
             if (!Connection.IsConnectionEstablished)
             {
+                MessageBox.Show(Connection.GetDebugInfo().LatestMessage, "Error");
                 Close_port_button_Click(null, null);
                 return;
             }
@@ -94,6 +99,14 @@ namespace Lab_1
             Open_port_button.Enabled = !isNeedToOpen;
             AvailablePorts.Enabled = !isNeedToOpen;
             XOnXOffButton.Enabled = isNeedToOpen;
+            ChangeXOnXOffState();
+        }
+
+        private void ChangeXOnXOffState()
+        {
+            XOnXOffButton.Text = Connection?.GetDebugInfo().IsCurrentPortBusy ?? true
+                ? "Send XOn"
+                : "Send XOff";
         }
     }
 }

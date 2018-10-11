@@ -10,14 +10,25 @@ namespace Lab_1.Services.Connectors
     {
         private SerialPort Port { get; set; }
 
-        public SoftwareFlowControl AnotherFlowState { get; private set; } = SoftwareFlowControl.XOn;
+        public SoftwareFlowControl AnotherFlowState { get; private set; } = SoftwareFlowControl.XOff;
 
-        public SoftwareFlowControl CurrentFlowState { get; private set; } = SoftwareFlowControl.XOn;
+        public SoftwareFlowControl CurrentFlowState { get; private set; } = SoftwareFlowControl.XOff;
 
         private bool IsDataCanBeSent => !Port.IsOpen || AnotherFlowState == SoftwareFlowControl.XOn;
 
+        public string LatestMessage { get; private set; }
+
+        public bool IsCurrentPortInitialized { get; set; }
+
+        public bool IsAnotherPortInitialized { get; set; }
+
+        public bool IsPortsInitialized => IsAnotherPortInitialized && IsCurrentPortInitialized;
+
         private readonly byte[] FlowControlSymbols =
-            {(byte) SoftwareFlowControl.XOff, (byte) SoftwareFlowControl.XOn};
+        {
+            (byte) SoftwareFlowControl.XOff,
+            (byte) SoftwareFlowControl.XOn
+        };
 
         public bool OpenConnection(IConnectionConfiguration configuration)
         {
@@ -41,6 +52,7 @@ namespace Lab_1.Services.Connectors
             }
             catch (Exception ex)
             {
+                LatestMessage = ex.Message;
                 return false;
             }
         }
@@ -52,15 +64,24 @@ namespace Lab_1.Services.Connectors
             Port.Read(buffer, 0, size);
             if (buffer.Length == 1 && FlowControlSymbols.Contains(buffer.First()))
             {
-                AnotherFlowState = (SoftwareFlowControl)buffer.First();
+                if (IsPortsInitialized || (SoftwareFlowControl)buffer.First() != SoftwareFlowControl.XOff)
+                {
+                    AnotherFlowState = (SoftwareFlowControl)buffer.First();
+
+                    if (!IsPortsInitialized)
+                    {
+                        IsAnotherPortInitialized = true;
+                    }
+                }
+                
                 return string.Empty;
             }
             return Port.Encoding.GetString(buffer, 0, buffer.Length);
         }
 
-        public void WriteMessage(string message)
+        public void WriteMessage(string message, bool isForceWrite = false)
         {
-            if (!IsDataCanBeSent)
+            if (!IsDataCanBeSent && !isForceWrite)
             {
                 return;
             }
@@ -80,7 +101,12 @@ namespace Lab_1.Services.Connectors
                 ? SoftwareFlowControl.XOn
                 : SoftwareFlowControl.XOff;
 
-            WriteMessage(((char)CurrentFlowState).ToString());
+            WriteMessage(((char)CurrentFlowState).ToString(), !IsPortsInitialized);
+
+            if (!IsPortsInitialized)
+            {
+                IsCurrentPortInitialized = true;
+            }
         }
 
         public DebugInfo GetDebugInfo()
@@ -88,7 +114,8 @@ namespace Lab_1.Services.Connectors
             return new DebugInfo
             {
                 IsCurrentPortBusy = CurrentFlowState == SoftwareFlowControl.XOff,
-                IsAnotherPortBusy = AnotherFlowState == SoftwareFlowControl.XOff
+                IsAnotherPortBusy = AnotherFlowState == SoftwareFlowControl.XOff,
+                LatestMessage = LatestMessage
             };
         }
     }
