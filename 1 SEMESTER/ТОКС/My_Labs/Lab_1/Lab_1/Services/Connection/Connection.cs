@@ -10,12 +10,15 @@ namespace Lab_1.Services.Connection
 
         public bool IsConnectionEstablished { get; private set; }
 
+        public int OutputBytes { get; private set; }
+
         public Connection(ConnectionConfiguration connectionConfiguration)
         {
             this.connectionConfiguration = connectionConfiguration;
 
             connector = ConnectionProvider.GetConnector(connectionConfiguration.ConnectionType);
             IsConnectionEstablished = connector.OpenConnection(connectionConfiguration);
+            ChangeFlowState(true);
         }
 
         public string ReadMessage()
@@ -27,7 +30,7 @@ namespace Lab_1.Services.Connection
         {
             if (IsConnectionEstablished || (IsConnectionEstablished = RestoreConnection()))
             {
-                connector.WriteMessage(message);
+                OutputBytes += connector.WriteMessage(message);
             }
         }
 

@@ -28,14 +28,8 @@ namespace Lab_1
         {
             string message = Connection.ReadMessage();
 
-            if (!Connection.GetDebugInfo().IsPortsInitialized)
-            {
-                return;
-            }
-
             if (string.IsNullOrEmpty(message))
             {
-                XOnXOffButton.Enabled = !Connection.GetDebugInfo().IsAnotherPortBusy;
                 return;
             }
 
@@ -46,9 +40,8 @@ namespace Lab_1
 
         private void SendButton_Click(object sender, EventArgs e)
         {
-            var text = InputTextBox.Text;
-            NumberOfOutputBytes.Text = text.Length.ToString();
-            Connection.WriteMessage(text);
+            Connection.WriteMessage(InputTextBox.Text);
+            NumberOfOutputBytes.Text = Connection.OutputBytes.ToString();
         }
 
         private void ClearTextBoxes()

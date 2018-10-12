@@ -8,7 +8,7 @@ namespace Lab_1.Services.Connectors
 
         string ReadMessage();
 
-        void WriteMessage(string message, bool isForceWrite = false);
+        int WriteMessage(string message, bool isForceWrite = false);
 
         void CloseConnection();
 

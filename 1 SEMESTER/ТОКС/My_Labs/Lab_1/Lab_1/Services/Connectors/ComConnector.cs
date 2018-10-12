@@ -64,29 +64,21 @@ namespace Lab_1.Services.Connectors
             Port.Read(buffer, 0, size);
             if (buffer.Length == 1 && FlowControlSymbols.Contains(buffer.First()))
             {
-                if (IsPortsInitialized || (SoftwareFlowControl)buffer.First() != SoftwareFlowControl.XOff)
-                {
-                    AnotherFlowState = (SoftwareFlowControl)buffer.First();
-
-                    if (!IsPortsInitialized)
-                    {
-                        IsAnotherPortInitialized = true;
-                    }
-                }
-                
+                AnotherFlowState = (SoftwareFlowControl)buffer.First();
                 return string.Empty;
             }
             return Port.Encoding.GetString(buffer, 0, buffer.Length);
         }
 
-        public void WriteMessage(string message, bool isForceWrite = false)
+        public int WriteMessage(string message, bool isForceWrite = false)
         {
-            if (!IsDataCanBeSent && !isForceWrite)
+            if (IsDataCanBeSent || isForceWrite)
             {
-                return;
+                Port.Write(message);
+                return message.Length;
             }
 
-            Port.Write(message);
+            return 0;
         }
 
         public void CloseConnection()
@@ -102,11 +94,6 @@ namespace Lab_1.Services.Connectors
                 : SoftwareFlowControl.XOff;
 
             WriteMessage(((char)CurrentFlowState).ToString(), !IsPortsInitialized);
-
-            if (!IsPortsInitialized)
-            {
-                IsCurrentPortInitialized = true;
-            }
         }
 
         public DebugInfo GetDebugInfo()
