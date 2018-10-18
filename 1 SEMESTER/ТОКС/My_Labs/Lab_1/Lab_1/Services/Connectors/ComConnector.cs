@@ -10,19 +10,19 @@ namespace Lab_1.Services.Connectors
     {
         private SerialPort Port { get; set; }
 
-        public SoftwareFlowControl AnotherFlowState { get; private set; } = SoftwareFlowControl.XOff;
+        public SoftwareFlowControl AnotherFlowState = SoftwareFlowControl.XOff;
 
-        public SoftwareFlowControl CurrentFlowState { get; private set; } = SoftwareFlowControl.XOff;
+        public SoftwareFlowControl CurrentFlowState = SoftwareFlowControl.XOff;
 
         private bool IsDataCanBeSent => !Port.IsOpen || AnotherFlowState == SoftwareFlowControl.XOn;
 
-        public string LatestMessage { get; private set; }
+        private string latestMessage;
 
-        public bool IsCurrentPortInitialized { get; set; }
+        private bool isCurrentPortInitialized;
 
-        public bool IsAnotherPortInitialized { get; set; }
+        private bool isAnotherPortInitialized;
 
-        public bool IsPortsInitialized => IsAnotherPortInitialized && IsCurrentPortInitialized;
+        public bool IsPortsInitialized => isAnotherPortInitialized && isCurrentPortInitialized;
 
         private readonly byte[] FlowControlSymbols =
         {
@@ -52,7 +52,7 @@ namespace Lab_1.Services.Connectors
             }
             catch (Exception ex)
             {
-                LatestMessage = ex.Message;
+                latestMessage = ex.Message;
                 return false;
             }
         }
@@ -102,7 +102,7 @@ namespace Lab_1.Services.Connectors
             {
                 IsCurrentPortBusy = CurrentFlowState == SoftwareFlowControl.XOff,
                 IsAnotherPortBusy = AnotherFlowState == SoftwareFlowControl.XOff,
-                LatestMessage = LatestMessage
+                LatestMessage = latestMessage
             };
         }
     }

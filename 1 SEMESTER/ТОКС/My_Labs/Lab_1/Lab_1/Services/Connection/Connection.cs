@@ -53,13 +53,13 @@ namespace Lab_1.Services.Connection
             connector?.CloseConnection();
         }
 
-        public void ChangeFlowState(bool isBusy)
+        public void ChangeFlowState(bool isCurrentFlowDisable)
         {
             if (!IsConnectionEstablished)
             {
                 return;
             }
-            connector.ChangeCurrentFlowState(!isBusy);
+            connector.ChangeCurrentFlowState(!isCurrentFlowDisable);
         }
 
         public DebugInfo GetDebugInfo()
