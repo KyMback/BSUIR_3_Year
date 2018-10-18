@@ -12,6 +12,8 @@ namespace Lab_1.Services.Connection
 
         public int OutputBytes { get; private set; }
 
+        public int InputBytes { get; private set; }
+
         public Connection(ConnectionConfiguration connectionConfiguration)
         {
             this.connectionConfiguration = connectionConfiguration;
@@ -23,15 +25,21 @@ namespace Lab_1.Services.Connection
 
         public string ReadMessage()
         {
-            return connector.ReadMessage();
+            string message = connector.ReadMessage();
+            InputBytes += message.Length;
+            return message;
         }
 
-        public void WriteMessage(string message)
+        public int WriteMessage(string message)
         {
             if (IsConnectionEstablished || (IsConnectionEstablished = RestoreConnection()))
             {
-                OutputBytes += connector.WriteMessage(message);
+                int number = connector.WriteMessage(message);
+                OutputBytes += number;
+                return number;
             }
+
+            return 0;
         }
 
         public bool RestoreConnection()

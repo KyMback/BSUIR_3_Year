@@ -33,14 +33,17 @@ namespace Lab_1
                 return;
             }
 
-            NumberOfInputBytes.Text = message.Length.ToString();
+            NumberOfInputBytes.Text = Connection.InputBytes.ToString();
             OutputTextBox.AppendText(message);
             OutputTextBox.AppendText(Environment.NewLine);
         }
 
         private void SendButton_Click(object sender, EventArgs e)
         {
-            Connection.WriteMessage(InputTextBox.Text);
+            if (Connection.WriteMessage(InputTextBox.Text) != 0)
+            {
+                InputTextBox.Clear();
+            }
             NumberOfOutputBytes.Text = Connection.OutputBytes.ToString();
         }
 
@@ -82,6 +85,7 @@ namespace Lab_1
         {
             ClearTextBoxes();
             Connection?.Dispose();
+            Connection = null;
             ChangeCurrentStateOfPort(false);
         }
 
