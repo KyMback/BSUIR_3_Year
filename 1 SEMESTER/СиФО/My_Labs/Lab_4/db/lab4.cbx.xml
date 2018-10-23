@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="lab4">
+		<CBX_INST_ENTRY INSTANCE_NAME="|LAB4_Start|CONTROL_DEVICE:inst38|BUSMUX:inst9|lpm_mux:$00000" CBX_FILE_NAME="mux_cgc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LAB4_Start|CONTROL_DEVICE:inst38|lpm_mux4:inst31|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_gsd.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LAB4_Start|RAM:inst32|lpm_ram_dq0:inst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_l4d1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LAB4_Start|RON:inst|lpm_decode4:inst20|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_h3f.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LAB4_Start|CONTROL_DEVICE:inst38|lpm_decode1:inst11|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_vve.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LAB4_Start|CONTROL_DEVICE:inst38|lpm_mux4:inst27|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_gsd.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LAB4_Start|CONTROL_DEVICE:inst38|lpm_mux4:inst32|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_gsd.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LAB4_Start|ROM:inst39|IPRegister:inst|BUSMUX:inst2|lpm_mux:$00000" CBX_FILE_NAME="mux_cgc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LAB4_Start|ROM:inst39|lpm_decode2:inst2|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_70f.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LAB4_Start|ROM:inst39|lpm_mux5:inst5|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_gsd.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LAB4_Start|ROM:inst39|lpm_mux6:inst13|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_gsd.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LAB4_Start|ROM:inst39|lpm_rom1:inst1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_2u31.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LAB4_Start|RON:inst|lpm_mux1:inst22|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_0td.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LAB4_Start|BUSMUX:inst3|lpm_mux:$00000" CBX_FILE_NAME="mux_dgc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LAB4_Start|CONTROL_DEVICE:inst38|BUSMUX:inst17|lpm_mux:$00000" CBX_FILE_NAME="mux_dgc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LAB4_Start|CONTROL_DEVICE:inst38|BUSMUX:inst8|lpm_mux:$00000" CBX_FILE_NAME="mux_cgc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LAB4_Start|CONTROL_DEVICE:inst38|lpm_mux4:inst33|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_gsd.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LAB4_Start|ROM:inst39|IPRegister:inst|lpm_add_sub0:inst1|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_bhh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LAB4_Start|RON:inst|lpm_decode5:inst21|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_70f.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|LAB4_Start|RAM:inst32|lpm_decode3:inst4|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_70f.tdf"/>
+	</PROJECT>
+</LOG_ROOT>
