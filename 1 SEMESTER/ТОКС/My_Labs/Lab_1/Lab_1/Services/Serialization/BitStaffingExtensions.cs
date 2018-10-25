@@ -9,19 +9,37 @@ namespace Lab_1.Services.Serialization
     {
         public static IList<bool> BytesToBits(this byte[] bytes)
         {
-            BitArray array = new BitArray(bytes);
+            var resultList = new List<bool>();
+            foreach (byte b in bytes)
+            {
+                resultList.AddRange(b.ByteToBit());
+            }
+
+            return resultList;
+        }
+
+        public static IList<bool> ByteToBit(this byte @byte)
+        {
+            BitArray array = new BitArray(new [] { @byte });
             var resultList = new List<bool>();
             foreach (bool b in array)
             {
                 resultList.Add(b);
             }
 
+            resultList.Reverse();
             return resultList;
         }
 
         public static byte[] BitsToBytes(this IList<bool> bits)
         {
-            BitArray bitsArray = new BitArray(bits.ToArray());
+            var array = new List<bool>();
+            for (int i = 0; i < bits.Count; i+=8)
+            {
+                array.AddRange(bits.Skip(i).Take(8).Reverse());
+            }
+
+            BitArray bitsArray = new BitArray(array.ToArray());
 
             byte[] result = new byte[bits.Count / 8];
             bitsArray.CopyTo(result, 0);

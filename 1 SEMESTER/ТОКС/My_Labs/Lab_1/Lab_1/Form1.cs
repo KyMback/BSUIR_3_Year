@@ -43,12 +43,14 @@ namespace Lab_1
             if (Connection.WriteMessage(InputTextBox.Text) != 0)
             {
                 InputTextBox.Clear();
-                PackageInfoTextBox.Clear();
             }
 
-            PackageInfoTextBox.Text = Connection.GetDebugInfo().Package == null
-                ? null
-                : BitConverter.ToString(Connection.GetDebugInfo().Package);
+            if (Connection.GetDebugInfo().Package != null)
+            {
+                PackageInfoTextBox.AppendText(BitConverter.ToString(Connection.GetDebugInfo().Package));
+                PackageInfoTextBox.AppendText(Environment.NewLine);
+            }
+
             NumberOfOutputBytes.Text = Connection.OutputBytes.ToString();
         }
 
@@ -74,7 +76,7 @@ namespace Lab_1
             {
                 return;
             }
-
+            Connection?.ChangeAddresses((byte)SourceAddress.Value, (byte)DestinationAddress.Value);
             ConnectionConfiguration.ConnectionName = portName;
             Connection = new Connection(ConnectionConfiguration);
             if (!Connection.IsConnectionEstablished)
@@ -113,12 +115,12 @@ namespace Lab_1
 
         private void SourceAddressChanged(object sender, EventArgs e)
         {
-            Connection.ChangeAddresses((byte)SourceAddress.Value, (byte)DestinationAddress.Value);
+            Connection?.ChangeAddresses((byte)SourceAddress.Value, (byte)DestinationAddress.Value);
         }
 
         private void DestinationAddress_ValueChanged(object sender, EventArgs e)
         {
-            Connection.ChangeAddresses((byte)SourceAddress.Value, (byte)DestinationAddress.Value);
+            Connection?.ChangeAddresses((byte)SourceAddress.Value, (byte)DestinationAddress.Value);
         }
     }
 }

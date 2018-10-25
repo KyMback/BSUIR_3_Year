@@ -58,7 +58,7 @@ namespace Lab_1.Services.Serialization
         private static IList<bool> NormalizeBytePackage(IList<bool> bitCollection)
         {
             int neededBits = 8 - bitCollection.Count % 8;
-            if (neededBits == 0)
+            if (neededBits == 8)
             {
                 return bitCollection;
             }
