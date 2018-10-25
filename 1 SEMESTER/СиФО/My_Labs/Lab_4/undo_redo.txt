@@ -1,0 +1,497 @@
+MED
+c:\altera\91\quartus\RON_HEX.hex
+
+	Undo Commands
+	     1.	Change Memory Radix
+
+
+GED
+
+	Undo Commands
+	     1.	Paste
+
+
+GED
+
+	Undo Commands
+	     1.	Insert Bus
+	     2.	Move
+	     3.	Move
+	     4.	Move
+	     5.	Move
+	     6.	Insert Symbol
+	     7.	Delete
+	     8.	Delete
+	     9.	Delete
+	    10.	Move
+	    11.	Delete
+	    12.	Paste
+	    13.	Move
+	    14.	Move
+	    15.	Move
+	    16.	Move
+	    17.	Move
+	    18.	Move
+	    19.	Move
+	    20.	Move
+	    21.	Move
+	    22.	Move
+	    23.	Move
+	    24.	Move
+	    25.	Move
+	    26.	Move
+	    27.	Move
+	    28.	Move
+	    29.	Move
+	    30.	Move
+	    31.	Move
+	    32.	Move
+	    33.	Move
+	    34.	Move
+	    35.	Move
+	    36.	Move
+	    37.	Move
+	    38.	Move
+	    39.	Move
+	    40.	Move
+	    41.	Move
+	    42.	Move
+	    43.	Move
+	    44.	Move
+	    45.	Move
+	    46.	Move
+	    47.	Move
+	    48.	Move
+	    49.	Move
+	    50.	Move
+	    51.	Move
+	    52.	Move
+	    53.	Move
+	    54.	Move
+	    55.	Move
+	    56.	Move
+	    57.	Move
+	    58.	Insert Symbol
+	    59.	Move
+	    60.	Move
+	    61.	Move
+	    62.	Insert Symbol
+	    63.	Insert Bus
+	    64.	Insert Symbol
+	    65.	Move
+	    66.	Move
+	    67.	Move
+	    68.	Move
+	    69.	Move
+	    70.	Move
+	    71.	Move
+	    72.	Insert Symbol
+	    73.	Delete
+	    74.	Insert Symbol
+	    75.	Delete
+	    76.	Move
+	    77.	Move
+	    78.	Insert Node
+	    79.	Move
+	    80.	Move
+	    81.	Move
+	    82.	Properties
+	    83.	Move
+	    84.	Move
+	    85.	Move
+	    86.	Paste
+	    87.	Insert Node
+	    88.	Insert Symbol
+	    89.	Insert Symbol
+
+
+GED
+
+	Undo Commands
+	     1.	Move
+	     2.	Move
+	     3.	Properties
+	     4.	Insert Node
+	     5.	Move
+	     6.	Move
+	     7.	Insert Symbol
+	     8.	Move
+	     9.	Move
+	    10.	Move
+	    11.	Move
+	    12.	Move
+	    13.	Move
+	    14.	Resize
+	    15.	Move
+	    16.	Properties
+	    17.	Insert Symbol
+	    18.	Insert Node
+	    19.	Move
+	    20.	Properties
+	    21.	Move
+	    22.	Move
+	    23.	Move
+	    24.	Move
+	    25.	Move
+	    26.	Move
+	    27.	Move
+	    28.	Move
+	    29.	Move
+	    30.	Move
+	    31.	Move
+	    32.	Move
+	    33.	Move
+	    34.	Move
+	    35.	Delete
+	    36.	Move
+	    37.	Move
+	    38.	Paste
+	    39.	Delete Insert
+	    40.	Move
+	    41.	Move
+	    42.	Move
+	    43.	Insert Symbol
+	    44.	Move
+	    45.	Move
+	    46.	Move
+	    47.	Move
+	    48.	Move
+	    49.	Move
+	    50.	Move
+	    51.	Move
+	    52.	Move
+	    53.	Move
+	    54.	Move
+	    55.	Move
+	    56.	Move
+	    57.	Move
+	    58.	Move
+	    59.	Move
+	    60.	Move
+	    61.	Move
+	    62.	Move
+	    63.	Move
+	    64.	Move
+	    65.	Move
+	    66.	Insert Node
+	    67.	Move
+	    68.	Move
+	    69.	Move
+	    70.	Move
+	    71.	Move
+	    72.	Move
+	    73.	Move
+	    74.	Move
+	    75.	Move
+	    76.	Move
+	    77.	Move
+	    78.	Move
+	    79.	Move
+	    80.	Move
+	    81.	Move
+	    82.	Move
+	    83.	Move
+	    84.	Move
+	    85.	Move
+	    86.	Move
+	    87.	Move
+	    88.	Move
+	    89.	Move
+	    90.	Insert Bus
+	    91.	Move
+	    92.	Properties
+	    93.	Insert Symbol
+	    94.	Move
+	    95.	Move
+	    96.	Move
+	    97.	Properties
+	    98.	Insert Symbol
+	    99.	Move
+	   100.	Move
+
+
+GED
+
+	Undo Commands
+	     1.	Insert Node
+	     2.	Insert Node
+	     3.	Insert Node
+	     4.	Insert Node
+	     5.	Insert Node
+	     6.	Insert Node
+	     7.	Insert Node
+	     8.	Insert Node
+	     9.	Move
+	    10.	Rotate 90
+	    11.	Rotate 90
+	    12.	Rotate 90
+	    13.	Move
+	    14.	Move
+	    15.	Move
+	    16.	Move
+	    17.	Move
+	    18.	Move
+	    19.	Move
+	    20.	Move
+	    21.	Move
+	    22.	Move
+	    23.	Move
+	    24.	Move
+	    25.	Move
+	    26.	Move
+	    27.	Move
+	    28.	Move
+	    29.	Move
+	    30.	Move
+	    31.	Move
+	    32.	Move
+	    33.	Move
+	    34.	Move
+	    35.	Move
+	    36.	Move
+	    37.	Move
+	    38.	Move
+	    39.	Move
+	    40.	Move
+	    41.	Move
+	    42.	Paste
+	    43.	Move
+	    44.	Paste
+	    45.	Paste
+	    46.	Paste
+	    47.	Paste
+	    48.	Paste
+	    49.	Move
+	    50.	Paste
+	    51.	Move
+	    52.	Delete Insert
+	    53.	Delete Insert
+	    54.	Delete Insert
+	    55.	Insert Symbol
+	    56.	Move
+	    57.	Move
+	    58.	Move
+	    59.	Move
+	    60.	Move
+	    61.	Move
+	    62.	Move
+	    63.	Move
+	    64.	Move
+	    65.	Move
+	    66.	Move
+	    67.	Move
+	    68.	Move
+	    69.	Move
+	    70.	Move
+	    71.	Move
+	    72.	Move
+	    73.	Move
+	    74.	Move
+	    75.	Move
+	    76.	Move
+	    77.	Move
+	    78.	Move
+	    79.	Move
+	    80.	Move
+	    81.	Move
+	    82.	Move
+	    83.	Move
+	    84.	Move
+	    85.	Move
+	    86.	Properties
+	    87.	Insert Symbol
+	    88.	Delete
+	    89.	Properties
+	    90.	Insert Symbol
+	    91.	Move
+	    92.	Move
+	    93.	Move
+	    94.	Move
+	    95.	Move
+	    96.	Move
+	    97.	Paste
+
+
+GED
+
+	Undo Commands
+	     1.	Update Symbol or Block
+	     2.	Properties
+	     3.	Move
+	     4.	Flip Horizontal
+	     5.	Insert Symbol
+	     6.	Delete
+	     7.	Properties
+	     8.	Insert Symbol
+	     9.	Delete
+	    10.	Properties
+	    11.	Move
+	    12.	Paste
+
+
+GED
+
+	Undo Commands
+	     1.	Properties
+	     2.	Move
+	     3.	Insert Symbol
+	     4.	Properties
+	     5.	Properties
+	     6.	Move
+	     7.	Paste
+	     8.	Move
+	     9.	Move
+	    10.	Move
+	    11.	Move
+	    12.	Move
+	    13.	Move
+	    14.	Move
+	    15.	Insert Symbol
+	    16.	Delete
+	    17.	Move
+	    18.	Move
+	    19.	Move
+	    20.	Move
+	    21.	Move
+	    22.	Move
+	    23.	Move
+	    24.	Move
+	    25.	Move
+	    26.	Delete Insert
+	    27.	Move
+	    28.	Paste
+	    29.	Delete
+	    30.	Properties
+	    31.	Delete
+	    32.	Move
+	    33.	Move
+	    34.	Properties
+	    35.	Properties
+	    36.	Move
+	    37.	Paste
+	    38.	Properties
+	    39.	Insert Symbol
+	    40.	Move
+	    41.	Move
+	    42.	Properties
+	    43.	Insert Node
+	    44.	Properties
+	    45.	Move
+	    46.	Insert Bus
+	    47.	Insert Symbol
+	    48.	Move
+	    49.	Properties
+	    50.	Properties
+	    51.	Properties
+	    52.	Properties
+	    53.	Properties
+	    54.	Properties
+	    55.	Properties
+	    56.	Properties
+	    57.	Properties
+	    58.	Move
+	    59.	Move
+	    60.	Move
+	    61.	Move
+	    62.	Move
+	    63.	Move
+	    64.	Move
+	    65.	Move
+	    66.	Move
+	    67.	Paste
+	    68.	Move
+	    69.	Move
+	    70.	Move
+	    71.	Move
+	    72.	Move
+	    73.	Move
+	    74.	Move
+	    75.	Move
+	    76.	Move
+	    77.	Move
+	    78.	Move
+	    79.	Move
+	    80.	Move
+	    81.	Move
+	    82.	Move
+	    83.	Move
+	    84.	Move
+	    85.	Move
+	    86.	Move
+	    87.	Move
+	    88.	Move
+	    89.	Move
+	    90.	Move
+	    91.	Paste
+	    92.	Paste
+	    93.	Paste
+	    94.	Paste
+	    95.	Paste
+	    96.	Paste
+	    97.	Move
+	    98.	Move
+	    99.	Move
+	   100.	Move
+
+
+GED
+
+	Undo Commands
+	     1.	Properties
+	     2.	Insert Bus
+	     3.	Delete
+	     4.	Insert Bus
+	     5.	Move
+	     6.	Move
+	     7.	Move
+	     8.	Delete Insert
+	     9.	Move
+	    10.	Rotate 90
+	    11.	Move
+	    12.	Move
+	    13.	Move
+	    14.	Move
+	    15.	Move
+	    16.	Move
+	    17.	Insert Symbol
+	    18.	Move
+	    19.	Move
+	    20.	Move
+	    21.	Properties
+	    22.	Insert Symbol
+	    23.	Move
+	    24.	Move
+	    25.	Move
+	    26.	Move
+	    27.	Properties
+	    28.	Insert Symbol
+	    29.	Properties
+	    30.	Insert Symbol
+	    31.	Move
+	    32.	Move
+	    33.	Rotate 90
+	    34.	Rotate 90
+	    35.	Rotate 90
+	    36.	Insert Symbol
+	    37.	Insert Bus
+	    38.	Move
+	    39.	Move
+	    40.	Move
+	    41.	Move
+	    42.	Move
+	    43.	Move
+	    44.	Move
+	    45.	Insert Node
+	    46.	Delete
+	    47.	Move
+	    48.	Insert Node
+	    49.	Rotate 90
+	    50.	Rotate 90
+	    51.	Rotate 90
+	    52.	Insert Symbol
+	    53.	Move
+	    54.	Insert Symbol
+	    55.	Delete
+	    56.	Insert Symbol
+
+
