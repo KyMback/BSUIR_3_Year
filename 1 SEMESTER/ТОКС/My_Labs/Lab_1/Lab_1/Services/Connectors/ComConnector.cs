@@ -1,8 +1,10 @@
 ﻿using System;
 using System.IO.Ports;
 using System.Linq;
+using System.Text;
 using Lab_1.Enums;
 using Lab_1.Services.Connection;
+using Lab_1.Services.Serialization;
 
 namespace Lab_1.Services.Connectors
 {
@@ -23,6 +25,12 @@ namespace Lab_1.Services.Connectors
         private bool isAnotherPortInitialized;
 
         public bool IsPortsInitialized => isAnotherPortInitialized && isCurrentPortInitialized;
+
+        public byte SourceAddress { get; set; }
+
+        public byte DestinationAddress { get; set; }
+
+        public byte[] LatestPackage { get; set; }
 
         private readonly byte[] FlowControlSymbols =
         {
@@ -67,18 +75,53 @@ namespace Lab_1.Services.Connectors
                 AnotherFlowState = (SoftwareFlowControl)buffer.First();
                 return string.Empty;
             }
-            return Port.Encoding.GetString(buffer, 0, buffer.Length);
+
+            PackageInfo packageInfo = PackageDeserializator.DeserializePackage(buffer);
+            if (!IsPackageValid(packageInfo))
+            {
+                return string.Empty;
+            }
+
+            return Port.Encoding.GetString(packageInfo.Message, 0, packageInfo.Message.Length);
         }
 
-        public int WriteMessage(string message, bool isForceWrite = false)
+        private bool IsPackageValid(PackageInfo packageInfo)
+        {
+            return packageInfo.DestinationAddress == SourceAddress;
+        }
+
+        public int WriteMessage(string message, bool isForceWrite = false, bool skipPackaging = false)
         {
             if (IsDataCanBeSent || isForceWrite)
             {
-                Port.Write(message);
-                return message.Length;
+                if (skipPackaging)
+                {
+                    Port.Write(message);
+                    return message.Length;
+                }
+
+                if (message.Length > byte.MaxValue)
+                {
+                    return 0;
+                }
+
+                PackageInfo packageInfo = GetPackageInfo(message);
+                byte[] bytes = LatestPackage = PackageSerializator.SerializePackage(packageInfo);
+                Port.Write(bytes, 0, bytes.Length);
+                return packageInfo.Message.Length;
             }
 
             return 0;
+        }
+
+        private PackageInfo GetPackageInfo(string message)
+        {
+            return new PackageInfo
+            {
+                Message = Encoding.UTF8.GetBytes(message),
+                DestinationAddress = DestinationAddress,
+                SourceAddress = SourceAddress
+            };
         }
 
         public void CloseConnection()
@@ -93,7 +136,7 @@ namespace Lab_1.Services.Connectors
                 ? SoftwareFlowControl.XOn
                 : SoftwareFlowControl.XOff;
 
-            WriteMessage(((char)CurrentFlowState).ToString(), !IsPortsInitialized);
+            WriteMessage(((char)CurrentFlowState).ToString(), !IsPortsInitialized, true);
         }
 
         public DebugInfo GetDebugInfo()
@@ -102,7 +145,8 @@ namespace Lab_1.Services.Connectors
             {
                 IsCurrentPortBusy = CurrentFlowState == SoftwareFlowControl.XOff,
                 IsAnotherPortBusy = AnotherFlowState == SoftwareFlowControl.XOff,
-                LatestMessage = latestMessage
+                LatestMessage = latestMessage,
+                Package = LatestPackage
             };
         }
     }

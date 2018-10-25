@@ -43,7 +43,12 @@ namespace Lab_1
             if (Connection.WriteMessage(InputTextBox.Text) != 0)
             {
                 InputTextBox.Clear();
+                PackageInfoTextBox.Clear();
             }
+
+            PackageInfoTextBox.Text = Connection.GetDebugInfo().Package == null
+                ? null
+                : BitConverter.ToString(Connection.GetDebugInfo().Package);
             NumberOfOutputBytes.Text = Connection.OutputBytes.ToString();
         }
 
@@ -104,6 +109,16 @@ namespace Lab_1
             XOnXOffButton.Text = Connection?.GetDebugInfo().IsCurrentPortBusy ?? true
                 ? "Send XOn"
                 : "Send XOff";
+        }
+
+        private void SourceAddressChanged(object sender, EventArgs e)
+        {
+            Connection.ChangeAddresses((byte)SourceAddress.Value, (byte)DestinationAddress.Value);
+        }
+
+        private void DestinationAddress_ValueChanged(object sender, EventArgs e)
+        {
+            Connection.ChangeAddresses((byte)SourceAddress.Value, (byte)DestinationAddress.Value);
         }
     }
 }

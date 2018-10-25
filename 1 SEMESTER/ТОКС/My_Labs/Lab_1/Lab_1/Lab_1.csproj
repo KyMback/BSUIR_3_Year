@@ -63,7 +63,12 @@
     <Compile Include="Services\Connectors\ConnectionProvider.cs" />
     <Compile Include="Services\Connectors\IConnector.cs" />
     <Compile Include="Services\DebugInfo.cs" />
+    <Compile Include="Services\Serialization\BitStaffingExtensions.cs" />
+    <Compile Include="Services\Serialization\PackageDeserializator.cs" />
+    <Compile Include="Services\Serialization\PackageInfo.cs" />
+    <Compile Include="Services\Serialization\PackageSerializator.cs" />
     <Compile Include="Services\Utils\ComPortsUtils.cs" />
+    <Compile Include="SystemSettings.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

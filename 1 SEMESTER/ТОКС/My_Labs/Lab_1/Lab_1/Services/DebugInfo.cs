@@ -7,5 +7,7 @@
         public bool IsAnotherPortBusy { get; set; }
 
         public string LatestMessage { get; set; }
+
+        public byte[] Package { get; set; }
     }
 }

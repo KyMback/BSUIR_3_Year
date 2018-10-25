@@ -66,5 +66,11 @@ namespace Lab_1.Services.Connection
         {
             return connector.GetDebugInfo();
         }
+
+        public void ChangeAddresses(byte sourceAddress, byte destinationAddress)
+        {
+            connector.SourceAddress = sourceAddress;
+            connector.DestinationAddress = destinationAddress;
+        }
     }
 }
