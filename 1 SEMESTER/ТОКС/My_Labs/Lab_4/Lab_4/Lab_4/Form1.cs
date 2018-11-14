@@ -4,7 +4,7 @@ using System.Windows.Forms;
 
 namespace Lab_4
 {
-    public partial class Form1 : Form
+    public partial class Lab_4 : Form
     {
         public Random Random { get; set; }
 
@@ -19,7 +19,7 @@ namespace Lab_4
         private int GetDelayForCollisionWaiting(int count) =>
             Random.Next(0, (int) Math.Pow(2, Math.Min(count, MaximumAttempts))) * 10;
 
-        public Form1()
+        public Lab_4()
         {
             InitializeComponent();
             Random = new Random();

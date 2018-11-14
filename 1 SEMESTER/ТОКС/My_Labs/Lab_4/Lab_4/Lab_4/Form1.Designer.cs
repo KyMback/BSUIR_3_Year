@@ -1,6 +1,6 @@
 ﻿namespace Lab_4
 {
-    partial class Form1
+    partial class Lab_4
     {
         /// <summary>
         /// Required designer variable.
@@ -120,7 +120,7 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Form1
+            // Lab_4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -135,8 +135,8 @@
             this.Controls.Add(this.InputTextBox);
             this.MaximumSize = new System.Drawing.Size(315, 437);
             this.MinimumSize = new System.Drawing.Size(315, 437);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Lab_4";
+            this.Text = "Lab_4";
             this.ResumeLayout(false);
             this.PerformLayout();
 
