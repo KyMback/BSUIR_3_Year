@@ -6,7 +6,8 @@ namespace Lab_4
 {
     public partial class Lab_4 : Form
     {
-        public Random Random { get; set; }
+        private Random Random { get; }
+        private string Buffer { get; set; }
 
         private const int Pwd = 50;
         private const int MaximumAttempts = 10;
@@ -37,7 +38,8 @@ namespace Lab_4
             foreach (var symbol in data)
             {
                 int counter = 0;
-                while (!TryToSend(symbol))
+                bool flag;
+                while (!(flag = TryToSend(symbol)))
                 {
                     counter++;
                     if (counter > MaximumAttempts)
@@ -46,20 +48,27 @@ namespace Lab_4
                     }
                     Thread.Sleep(GetDelayForCollisionWaiting(counter));
                 }
+                if(flag){
+                    OutputTextBox.AppendText(Buffer);
+                }              
+                Buffer = string.Empty;
                 DebugTextBox.AppendText(Environment.NewLine);
             }
+            OutputTextBox.AppendText(Environment.NewLine);
         }
 
         private bool TryToSend(char data)
         {
             while (!IsChannelFree()) { }
             Thread.Sleep(Pwd);
+            if(string.IsNullOrEmpty(Buffer)){
+                Buffer += data.ToString();
+            }
             if (IsCollisionOccured())
             {
                 DebugTextBox.AppendText(CollisionSymbol);
                 return false;
             }
-            OutputTextBox.AppendText(data + Environment.NewLine);
             return true;
         }
 
