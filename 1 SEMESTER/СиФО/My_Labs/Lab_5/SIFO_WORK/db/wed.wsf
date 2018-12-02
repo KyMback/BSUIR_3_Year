@@ -992,14 +992,14 @@ VECTOR("D:/BSUIR/3 Year/1 SEMESTER/—Ë‘Œ/My_Labs/Lab_5/SIFO_WORK/Master0.vwf")
 	}
 }
 
-VECTOR("D:/BSUIR/3 Year/1 SEMESTER/—Ë‘Œ/My_Labs/Lab_5/SIFO_WORK/Main.vwf")
+VECTOR("D:/BSUIR/3 Year/1 SEMESTER/—Ë‘Œ/My_Labs/Lab_5/SIFO_WORK/db/Saharuk_5.sim.cvwf")
 {
 	ZOOM{
 		ZBEGIN = 0;
-		ZEND = 0;
-		NUMERATOR = 0;
-		DENOMINATOR = 0;
-		TOP_INDEX = 0;
+		ZEND = 755520;
+		NUMERATOR = 945;
+		DENOMINATOR = 755520;
+		TOP_INDEX = 11;
 	}
 	CLOCK{
 		PERIOD = 10000;
@@ -1571,13 +1571,13 @@ VECTOR("D:/BSUIR/3 Year/1 SEMESTER/—Ë‘Œ/My_Labs/Lab_5/SIFO_WORK/Main.vwf")
 	}
 }
 
-VECTOR("D:/BSUIR/3 Year/1 SEMESTER/—Ë‘Œ/My_Labs/Lab_5/SIFO_WORK/db/Saharuk_5.sim.cvwf")
+VECTOR("D:/BSUIR/3 Year/1 SEMESTER/—Ë‘Œ/My_Labs/Lab_5/SIFO_WORK/Main.vwf")
 {
 	ZOOM{
-		ZBEGIN = 107442;
-		ZEND = 286515;
-		NUMERATOR = 1264;
-		DENOMINATOR = 235290;
+		ZBEGIN = 0;
+		ZEND = 436000;
+		NUMERATOR = 1090;
+		DENOMINATOR = 436000;
 		TOP_INDEX = 0;
 	}
 	CLOCK{
