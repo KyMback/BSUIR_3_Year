@@ -78,8 +78,8 @@ class MainWindow(QtWidgets.QMainWindow):
         #print(self.title, ' receive : ', frame)
         self.frame = frame
         self.Marker.setText("*")
-        if self.frame[0] == 'T':
-            if self.is_monitor:
+        if self.frame[0] == 'F':
+            if self.is_monitor and self.cbSA.currentText() != frame[1]:
                 if self.frame[4] == 0:
                     self.frame[4] = 1
                 else:

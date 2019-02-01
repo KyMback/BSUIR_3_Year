@@ -5,7 +5,6 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|Main|Cash:inst|Row_Facade:Row14|lpm_compare0:inst5|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_aig.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Main|Cash:inst|Row_Facade:Row6|lpm_compare2:inst2|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_big.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Main|Cash:inst|lpm_constant11:inst71|lpm_constant:lpm_constant_component" CBX_FILE_NAME="lpm_constant_of6.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Main|Proxy:inst13|BUSMUX:inst1|LPM_MUX:$00000" CBX_FILE_NAME="mux_tnc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Main|Cash:inst|Row_Facade:Row12|lpm_decode0:inst1|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_0sf.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Main|Cash:inst|Row_Facade:Row6|lpm_compare0:inst5|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_aig.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Main|Cash:inst|Row_Facade:Row13|lpm_decode0:inst1|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_0sf.tdf"/>
@@ -78,7 +77,6 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|Main|Cash:inst|Row_Facade:Row3|lpm_decode0:inst1|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_0sf.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Main|Cash:inst|Row_Facade:Row7|lpm_compare2:inst2|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_big.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Main|Cash:inst|Row_Facade:Row8|Cash_Row:inst|lpm_mux0:inst|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_d4e.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|Main|Proxy:inst5|BUSMUX:inst1|LPM_MUX:$00000" CBX_FILE_NAME="mux_tnc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Main|Cash:inst|Row_Facade:Row4|lpm_decode0:inst1|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_0sf.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Main|Cash:inst|Row_Facade:Row7|lpm_compare0:inst5|lpm_compare:lpm_compare_component" CBX_FILE_NAME="cmpr_aig.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Main|Cash:inst|Row_Facade:Row9|Cash_Row:inst|lpm_mux0:inst|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_d4e.tdf"/>

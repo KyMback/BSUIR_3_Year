@@ -14671,23 +14671,23 @@ QA <= 34.DB_MAX_OUTPUT_PORT_TYPE
 |Main|Proxy:inst13
 prox[0] <= pr[0].DB_MAX_OUTPUT_PORT_TYPE
 prox[1] <= pr[1].DB_MAX_OUTPUT_PORT_TYPE
-prox[2] <= pr[2].DB_MAX_OUTPUT_PORT_TYPE
-prox[3] <= pr[3].DB_MAX_OUTPUT_PORT_TYPE
-prox[4] <= pr[4].DB_MAX_OUTPUT_PORT_TYPE
-prox[5] <= pr[5].DB_MAX_OUTPUT_PORT_TYPE
-prox[6] <= pr[6].DB_MAX_OUTPUT_PORT_TYPE
-prox[7] <= pr[7].DB_MAX_OUTPUT_PORT_TYPE
-prox[8] <= pr[8].DB_MAX_OUTPUT_PORT_TYPE
-en => BUSMUX:inst.sel
+prox[2] <= addr[2].DB_MAX_OUTPUT_PORT_TYPE
+prox[3] <= addr[3].DB_MAX_OUTPUT_PORT_TYPE
+prox[4] <= addr[4].DB_MAX_OUTPUT_PORT_TYPE
+prox[5] <= addr[5].DB_MAX_OUTPUT_PORT_TYPE
+prox[6] <= addr[6].DB_MAX_OUTPUT_PORT_TYPE
+prox[7] <= addr[7].DB_MAX_OUTPUT_PORT_TYPE
+prox[8] <= addr[8].DB_MAX_OUTPUT_PORT_TYPE
 addr[0] => BUSMUX:inst.dataa[0]
 addr[1] => BUSMUX:inst.dataa[1]
-addr[2] => BUSMUX:inst1.dataa[0]
-addr[3] => BUSMUX:inst1.dataa[1]
-addr[4] => BUSMUX:inst1.dataa[2]
-addr[5] => BUSMUX:inst1.dataa[3]
-addr[6] => BUSMUX:inst1.dataa[4]
-addr[7] => BUSMUX:inst1.dataa[5]
-addr[8] => BUSMUX:inst1.dataa[6]
+addr[2] => prox[2].DATAIN
+addr[3] => prox[3].DATAIN
+addr[4] => prox[4].DATAIN
+addr[5] => prox[5].DATAIN
+addr[6] => prox[6].DATAIN
+addr[7] => prox[7].DATAIN
+addr[8] => prox[8].DATAIN
+en => BUSMUX:inst.sel
 count[0] => BUSMUX:inst.datab[0]
 count[1] => BUSMUX:inst.datab[1]
 
@@ -14726,97 +14726,6 @@ sel[0] => l1_w0_n0_mux_dataout~0.IN0
 sel[0] => _~0.IN0
 sel[0] => l1_w1_n0_mux_dataout~0.IN0
 sel[0] => _~1.IN0
-
-
-|Main|Proxy:inst13|BUSMUX:inst1
-dataa[0] => lpm_mux:$00000.data[0][0]
-dataa[1] => lpm_mux:$00000.data[0][1]
-dataa[2] => lpm_mux:$00000.data[0][2]
-dataa[3] => lpm_mux:$00000.data[0][3]
-dataa[4] => lpm_mux:$00000.data[0][4]
-dataa[5] => lpm_mux:$00000.data[0][5]
-dataa[6] => lpm_mux:$00000.data[0][6]
-datab[0] => lpm_mux:$00000.data[1][0]
-datab[1] => lpm_mux:$00000.data[1][1]
-datab[2] => lpm_mux:$00000.data[1][2]
-datab[3] => lpm_mux:$00000.data[1][3]
-datab[4] => lpm_mux:$00000.data[1][4]
-datab[5] => lpm_mux:$00000.data[1][5]
-datab[6] => lpm_mux:$00000.data[1][6]
-sel => lpm_mux:$00000.sel[0]
-result[0] <= lpm_mux:$00000.result[0]
-result[1] <= lpm_mux:$00000.result[1]
-result[2] <= lpm_mux:$00000.result[2]
-result[3] <= lpm_mux:$00000.result[3]
-result[4] <= lpm_mux:$00000.result[4]
-result[5] <= lpm_mux:$00000.result[5]
-result[6] <= lpm_mux:$00000.result[6]
-
-
-|Main|Proxy:inst13|BUSMUX:inst1|LPM_MUX:$00000
-data[0][0] => mux_tnc:auto_generated.data[0]
-data[0][1] => mux_tnc:auto_generated.data[1]
-data[0][2] => mux_tnc:auto_generated.data[2]
-data[0][3] => mux_tnc:auto_generated.data[3]
-data[0][4] => mux_tnc:auto_generated.data[4]
-data[0][5] => mux_tnc:auto_generated.data[5]
-data[0][6] => mux_tnc:auto_generated.data[6]
-data[1][0] => mux_tnc:auto_generated.data[7]
-data[1][1] => mux_tnc:auto_generated.data[8]
-data[1][2] => mux_tnc:auto_generated.data[9]
-data[1][3] => mux_tnc:auto_generated.data[10]
-data[1][4] => mux_tnc:auto_generated.data[11]
-data[1][5] => mux_tnc:auto_generated.data[12]
-data[1][6] => mux_tnc:auto_generated.data[13]
-sel[0] => mux_tnc:auto_generated.sel[0]
-clock => ~NO_FANOUT~
-aclr => ~NO_FANOUT~
-clken => ~NO_FANOUT~
-result[0] <= mux_tnc:auto_generated.result[0]
-result[1] <= mux_tnc:auto_generated.result[1]
-result[2] <= mux_tnc:auto_generated.result[2]
-result[3] <= mux_tnc:auto_generated.result[3]
-result[4] <= mux_tnc:auto_generated.result[4]
-result[5] <= mux_tnc:auto_generated.result[5]
-result[6] <= mux_tnc:auto_generated.result[6]
-
-
-|Main|Proxy:inst13|BUSMUX:inst1|LPM_MUX:$00000|mux_tnc:auto_generated
-data[0] => l1_w0_n0_mux_dataout~1.IN1
-data[1] => l1_w1_n0_mux_dataout~1.IN1
-data[2] => l1_w2_n0_mux_dataout~1.IN1
-data[3] => l1_w3_n0_mux_dataout~1.IN1
-data[4] => l1_w4_n0_mux_dataout~1.IN1
-data[5] => l1_w5_n0_mux_dataout~1.IN1
-data[6] => l1_w6_n0_mux_dataout~1.IN1
-data[7] => l1_w0_n0_mux_dataout~0.IN1
-data[8] => l1_w1_n0_mux_dataout~0.IN1
-data[9] => l1_w2_n0_mux_dataout~0.IN1
-data[10] => l1_w3_n0_mux_dataout~0.IN1
-data[11] => l1_w4_n0_mux_dataout~0.IN1
-data[12] => l1_w5_n0_mux_dataout~0.IN1
-data[13] => l1_w6_n0_mux_dataout~0.IN1
-result[0] <= l1_w0_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
-result[1] <= l1_w1_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
-result[2] <= l1_w2_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
-result[3] <= l1_w3_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
-result[4] <= l1_w4_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
-result[5] <= l1_w5_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
-result[6] <= l1_w6_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
-sel[0] => l1_w0_n0_mux_dataout~0.IN0
-sel[0] => _~0.IN0
-sel[0] => l1_w1_n0_mux_dataout~0.IN0
-sel[0] => _~1.IN0
-sel[0] => l1_w2_n0_mux_dataout~0.IN0
-sel[0] => _~2.IN0
-sel[0] => l1_w3_n0_mux_dataout~0.IN0
-sel[0] => _~3.IN0
-sel[0] => l1_w4_n0_mux_dataout~0.IN0
-sel[0] => _~4.IN0
-sel[0] => l1_w5_n0_mux_dataout~0.IN0
-sel[0] => _~5.IN0
-sel[0] => l1_w6_n0_mux_dataout~0.IN0
-sel[0] => _~6.IN0
 
 
 |Main|lpm_counter1:inst9
@@ -15078,23 +14987,23 @@ wren_a => ram_block1a8.PORTAWE
 |Main|Proxy:inst5
 prox[0] <= pr[0].DB_MAX_OUTPUT_PORT_TYPE
 prox[1] <= pr[1].DB_MAX_OUTPUT_PORT_TYPE
-prox[2] <= pr[2].DB_MAX_OUTPUT_PORT_TYPE
-prox[3] <= pr[3].DB_MAX_OUTPUT_PORT_TYPE
-prox[4] <= pr[4].DB_MAX_OUTPUT_PORT_TYPE
-prox[5] <= pr[5].DB_MAX_OUTPUT_PORT_TYPE
-prox[6] <= pr[6].DB_MAX_OUTPUT_PORT_TYPE
-prox[7] <= pr[7].DB_MAX_OUTPUT_PORT_TYPE
-prox[8] <= pr[8].DB_MAX_OUTPUT_PORT_TYPE
-en => BUSMUX:inst.sel
+prox[2] <= addr[2].DB_MAX_OUTPUT_PORT_TYPE
+prox[3] <= addr[3].DB_MAX_OUTPUT_PORT_TYPE
+prox[4] <= addr[4].DB_MAX_OUTPUT_PORT_TYPE
+prox[5] <= addr[5].DB_MAX_OUTPUT_PORT_TYPE
+prox[6] <= addr[6].DB_MAX_OUTPUT_PORT_TYPE
+prox[7] <= addr[7].DB_MAX_OUTPUT_PORT_TYPE
+prox[8] <= addr[8].DB_MAX_OUTPUT_PORT_TYPE
 addr[0] => BUSMUX:inst.dataa[0]
 addr[1] => BUSMUX:inst.dataa[1]
-addr[2] => BUSMUX:inst1.dataa[0]
-addr[3] => BUSMUX:inst1.dataa[1]
-addr[4] => BUSMUX:inst1.dataa[2]
-addr[5] => BUSMUX:inst1.dataa[3]
-addr[6] => BUSMUX:inst1.dataa[4]
-addr[7] => BUSMUX:inst1.dataa[5]
-addr[8] => BUSMUX:inst1.dataa[6]
+addr[2] => prox[2].DATAIN
+addr[3] => prox[3].DATAIN
+addr[4] => prox[4].DATAIN
+addr[5] => prox[5].DATAIN
+addr[6] => prox[6].DATAIN
+addr[7] => prox[7].DATAIN
+addr[8] => prox[8].DATAIN
+en => BUSMUX:inst.sel
 count[0] => BUSMUX:inst.datab[0]
 count[1] => BUSMUX:inst.datab[1]
 
@@ -15133,97 +15042,6 @@ sel[0] => l1_w0_n0_mux_dataout~0.IN0
 sel[0] => _~0.IN0
 sel[0] => l1_w1_n0_mux_dataout~0.IN0
 sel[0] => _~1.IN0
-
-
-|Main|Proxy:inst5|BUSMUX:inst1
-dataa[0] => lpm_mux:$00000.data[0][0]
-dataa[1] => lpm_mux:$00000.data[0][1]
-dataa[2] => lpm_mux:$00000.data[0][2]
-dataa[3] => lpm_mux:$00000.data[0][3]
-dataa[4] => lpm_mux:$00000.data[0][4]
-dataa[5] => lpm_mux:$00000.data[0][5]
-dataa[6] => lpm_mux:$00000.data[0][6]
-datab[0] => lpm_mux:$00000.data[1][0]
-datab[1] => lpm_mux:$00000.data[1][1]
-datab[2] => lpm_mux:$00000.data[1][2]
-datab[3] => lpm_mux:$00000.data[1][3]
-datab[4] => lpm_mux:$00000.data[1][4]
-datab[5] => lpm_mux:$00000.data[1][5]
-datab[6] => lpm_mux:$00000.data[1][6]
-sel => lpm_mux:$00000.sel[0]
-result[0] <= lpm_mux:$00000.result[0]
-result[1] <= lpm_mux:$00000.result[1]
-result[2] <= lpm_mux:$00000.result[2]
-result[3] <= lpm_mux:$00000.result[3]
-result[4] <= lpm_mux:$00000.result[4]
-result[5] <= lpm_mux:$00000.result[5]
-result[6] <= lpm_mux:$00000.result[6]
-
-
-|Main|Proxy:inst5|BUSMUX:inst1|LPM_MUX:$00000
-data[0][0] => mux_tnc:auto_generated.data[0]
-data[0][1] => mux_tnc:auto_generated.data[1]
-data[0][2] => mux_tnc:auto_generated.data[2]
-data[0][3] => mux_tnc:auto_generated.data[3]
-data[0][4] => mux_tnc:auto_generated.data[4]
-data[0][5] => mux_tnc:auto_generated.data[5]
-data[0][6] => mux_tnc:auto_generated.data[6]
-data[1][0] => mux_tnc:auto_generated.data[7]
-data[1][1] => mux_tnc:auto_generated.data[8]
-data[1][2] => mux_tnc:auto_generated.data[9]
-data[1][3] => mux_tnc:auto_generated.data[10]
-data[1][4] => mux_tnc:auto_generated.data[11]
-data[1][5] => mux_tnc:auto_generated.data[12]
-data[1][6] => mux_tnc:auto_generated.data[13]
-sel[0] => mux_tnc:auto_generated.sel[0]
-clock => ~NO_FANOUT~
-aclr => ~NO_FANOUT~
-clken => ~NO_FANOUT~
-result[0] <= mux_tnc:auto_generated.result[0]
-result[1] <= mux_tnc:auto_generated.result[1]
-result[2] <= mux_tnc:auto_generated.result[2]
-result[3] <= mux_tnc:auto_generated.result[3]
-result[4] <= mux_tnc:auto_generated.result[4]
-result[5] <= mux_tnc:auto_generated.result[5]
-result[6] <= mux_tnc:auto_generated.result[6]
-
-
-|Main|Proxy:inst5|BUSMUX:inst1|LPM_MUX:$00000|mux_tnc:auto_generated
-data[0] => l1_w0_n0_mux_dataout~1.IN1
-data[1] => l1_w1_n0_mux_dataout~1.IN1
-data[2] => l1_w2_n0_mux_dataout~1.IN1
-data[3] => l1_w3_n0_mux_dataout~1.IN1
-data[4] => l1_w4_n0_mux_dataout~1.IN1
-data[5] => l1_w5_n0_mux_dataout~1.IN1
-data[6] => l1_w6_n0_mux_dataout~1.IN1
-data[7] => l1_w0_n0_mux_dataout~0.IN1
-data[8] => l1_w1_n0_mux_dataout~0.IN1
-data[9] => l1_w2_n0_mux_dataout~0.IN1
-data[10] => l1_w3_n0_mux_dataout~0.IN1
-data[11] => l1_w4_n0_mux_dataout~0.IN1
-data[12] => l1_w5_n0_mux_dataout~0.IN1
-data[13] => l1_w6_n0_mux_dataout~0.IN1
-result[0] <= l1_w0_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
-result[1] <= l1_w1_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
-result[2] <= l1_w2_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
-result[3] <= l1_w3_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
-result[4] <= l1_w4_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
-result[5] <= l1_w5_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
-result[6] <= l1_w6_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
-sel[0] => l1_w0_n0_mux_dataout~0.IN0
-sel[0] => _~0.IN0
-sel[0] => l1_w1_n0_mux_dataout~0.IN0
-sel[0] => _~1.IN0
-sel[0] => l1_w2_n0_mux_dataout~0.IN0
-sel[0] => _~2.IN0
-sel[0] => l1_w3_n0_mux_dataout~0.IN0
-sel[0] => _~3.IN0
-sel[0] => l1_w4_n0_mux_dataout~0.IN0
-sel[0] => _~4.IN0
-sel[0] => l1_w5_n0_mux_dataout~0.IN0
-sel[0] => _~5.IN0
-sel[0] => l1_w6_n0_mux_dataout~0.IN0
-sel[0] => _~6.IN0
 
 
 |Main|lpm_counter1:inst4
